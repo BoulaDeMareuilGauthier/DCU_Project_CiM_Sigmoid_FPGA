@@ -1,0 +1,43 @@
+# Kiro IDE
+.kiro/
+
+# Tests
+tests/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generated outputs
+*.png
+*.jpg
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
