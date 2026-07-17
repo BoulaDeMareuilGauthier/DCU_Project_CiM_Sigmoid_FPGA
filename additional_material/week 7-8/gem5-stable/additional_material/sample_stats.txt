@@ -1,0 +1,45 @@
+---------- Begin Simulation Statistics ----------
+simSeconds                                   0.001234567890
+simTicks                                 1234567890
+simFreq                                 1000000000000
+hostInstRate                                 1234567
+hostOpRate                                   2345678
+hostTickRate                                9876543210
+hostMemory                                   8192 MB
+hostSeconds                                   0.1234
+
+simInsts                                      123456
+simOps                                        234567
+simSeconds                                   1.2346e-04
+
+system.cpu.dcache.demandMisses::total           12345
+system.cpu.dcache.demandAccesses::total         98765
+
+---------- Begin DAFTPUM-LAT Statistics ----------
+daftpum_lat.total_bbops                     150
+daftpum_lat.total_latency_ns           45231.67
+daftpum_lat.total_energy_nj            2341.567
+daftpum_lat.avg_parallelism              48.3
+daftpum_lat.bit_precision_distribution.bucket_1            12
+daftpum_lat.bit_precision_distribution.bucket_4            28
+daftpum_lat.bit_precision_distribution.bucket_8            45
+daftpum_lat.bit_precision_distribution.bucket_12           32
+daftpum_lat.bit_precision_distribution.bucket_16           21
+daftpum_lat.bit_precision_distribution.bucket_24            8
+daftpum_lat.bit_precision_distribution.bucket_32            4
+daftpum_lat.adder_selection.bucket_0            15
+daftpum_lat.adder_selection.bucket_1             8
+daftpum_lat.adder_selection.bucket_2            12
+daftpum_lat.adder_selection.bucket_3            20
+daftpum_lat.adder_selection.bucket_4            95
+daftpum_lat.multiplier_selection.bucket_0            18
+daftpum_lat.multiplier_selection.bucket_1            42
+daftpum_lat.multiplier_selection.bucket_2            25
+daftpum_lat.multiplier_selection.bucket_3            12
+---------- End DAFTPUM-LAT Statistics ----------
+
+---------- Begin Simulation Statistics ----------
+simInsts                                      123456
+simOps                                        234567
+simSeconds                                   1.2346e-04
+simTicks                                 123456789

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<title>DAFTPUM-LAT Results</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+body { font-family: sans-serif; max-width: 960px; margin: 20px auto; }
+.card { background: #f8f9fa; border-radius: 8px; padding: 20px; margin: 16px 0; box-shadow: 0 2px 4px rgba(0,0,0,.1); }
+h1 { color: #333; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+canvas { max-height: 300px; }
+table { border-collapse: collapse; width: 100%; }
+td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background: #4C72B0; color: white; }
+</style></head><body>
+<h1>DAFTPUM-LAT Controller Results</h1>
+
+<div class="card">
+<h2>Execution Summary</h2>
+<table>
+<tr><th>Metric</th><th>Value</th></tr>
+<tr><td>Total BBOPs</td><td>150</td></tr>
+<tr><td>Total Latency</td><td>45231.67 ns</td></tr>
+<tr><td>Total Energy</td><td>2341.567 nJ</td></tr>
+<tr><td>Avg Parallelism</td><td>48.3 subarrays</td></tr>
+<tr><td>Avg Latency/BBOP</td><td>301.54 ns</td></tr>
+<tr><td>Avg Energy/BBOP</td><td>15.610 nJ</td></tr>
+</table></div>
+
+<div class="grid">
+<div class="card">
+<h3>Bit-Precision Distribution</h3>
+<canvas id="bpChart"></canvas></div>
+<div class="card">
+<h3>Adder Circuit Selection</h3>
+<canvas id="adderChart"></canvas></div>
+<div class="card">
+<h3>Multiplier Circuit Selection</h3>
+<canvas id="multChart"></canvas></div>
+</div>
+
+<script>
+new Chart(document.getElementById("bpChart"), {
+  type: "bar",
+  data: {
+    labels: ["1-bit", "4-bit", "8-bit", "12-bit", "16-bit", "24-bit", "32-bit"],
+    datasets: [{ label: "Count", data: [12, 28, 45, 32, 21, 8, 4],
+      backgroundColor: "#4C72B0" }]
+  },
+  options: { responsive: true, plugins: { legend: { display: false } } }
+});
+new Chart(document.getElementById("adderChart"), {
+  type: "doughnut",
+  data: {
+    labels: ["Full", "Sklansky", "Kogge-Stone", "Carry-Select", "RBR"],
+    datasets: [{ data: [15, 8, 12, 20, 95],
+      backgroundColor: ["#4C72B0","#55A868","#C44E52","#8172B2","#CCB974"] }]
+  },
+  options: { responsive: true }
+});
+new Chart(document.getElementById("multChart"), {
+  type: "doughnut",
+  data: {
+    labels: ["Full", "Sklansky", "Carry-Select", "RBR"],
+    datasets: [{ data: [18, 42, 25, 12],
+      backgroundColor: ["#4C72B0","#55A868","#C44E52","#8172B2"] }]
+  },
+  options: { responsive: true }
+});
+</script></body></html>

@@ -1,0 +1,14 @@
+---------- Begin DAFTPUM-LAT Statistics ----------
+daftpum_lat.total_bbops                     100
+daftpum_lat.total_latency_ns           32000.00
+daftpum_lat.total_energy_nj            1800.000
+daftpum_lat.avg_parallelism              32.0
+daftpum_lat.bit_precision_distribution.bucket_8            60
+daftpum_lat.bit_precision_distribution.bucket_16           30
+daftpum_lat.bit_precision_distribution.bucket_32           10
+daftpum_lat.adder_selection.bucket_0            10
+daftpum_lat.adder_selection.bucket_4            90
+daftpum_lat.multiplier_selection.bucket_1            40
+daftpum_lat.multiplier_selection.bucket_2            35
+daftpum_lat.multiplier_selection.bucket_3            25
+---------- End DAFTPUM-LAT Statistics ----------

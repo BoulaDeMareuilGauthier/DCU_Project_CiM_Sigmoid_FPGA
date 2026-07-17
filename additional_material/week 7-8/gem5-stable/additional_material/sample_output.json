@@ -1,0 +1,30 @@
+{
+  "total_bbops": 150,
+  "total_latency_ns": 45231.67,
+  "total_energy_nj": 2341.567,
+  "avg_parallelism": 48.3,
+  "bit_precision_dist": {
+    "1": 12,
+    "4": 28,
+    "8": 45,
+    "12": 32,
+    "16": 21,
+    "24": 8,
+    "32": 4
+  },
+  "adder_selection": {
+    "full": 15,
+    "sklansky": 8,
+    "kogge_stone": 12,
+    "carry_select": 20,
+    "rbr": 95,
+    "total": 150
+  },
+  "multiplier_selection": {
+    "full": 18,
+    "sklansky": 42,
+    "carry_select": 25,
+    "rbr": 12,
+    "total": 97
+  }
+}

@@ -1,0 +1,385 @@
+bit_precision,multiplier,label,family,latency_ns,energy_nj,area_ge
+1,full,Full (RC Array),exact,1.617,0.004355,1.0
+1,sklansky,Sklansky,exact,5.12,0.021167,4.86
+1,carrysel,Carry-Select,exact,2.974,0.021167,4.86
+1,rbr,RBR,exact,11.232,0.076866,17.65
+1,mitchell,Mitchell,approximate,6.652,0.028247,4.0
+1,alm_soa,ALM-SOA,approximate,7.0032,0.030102,4.772
+1,ilm_aa,ILM-AA,approximate,19.1869,0.036196,6.935
+1,cgpm1,CGPM1,approximate,0.8408,0.002177,0.43
+1,tam1,TAM1,approximate,0.5365,0.002003,0.44
+1,hocm,HOCM (1StepTrunc),approximate,0.6306,0.001568,0.5
+1,cgpm3,CGPM3,approximate,0.9379,0.002606,0.561
+1,bam,BAM,approximate,0.6145,-7.3e-05,0.28
+2,full,Full (RC Array),exact,1.617,0.028743,4.0
+2,sklansky,Sklansky,exact,5.12,0.110807,15.42
+2,carrysel,Carry-Select,exact,2.974,0.110807,15.42
+2,rbr,RBR,exact,11.232,0.185145,25.766
+2,mitchell,Mitchell,approximate,6.652,0.056493,8.0
+2,alm_soa,ALM-SOA,approximate,7.0032,0.060412,9.585
+2,ilm_aa,ILM-AA,approximate,19.1869,0.0727,13.965
+2,cgpm1,CGPM1,approximate,0.8408,0.014479,1.736
+2,tam1,TAM1,approximate,0.5365,0.011106,1.496
+2,hocm,HOCM (1StepTrunc),approximate,0.6306,0.012359,1.74
+2,cgpm3,CGPM3,approximate,0.9379,0.017291,2.261
+2,bam,BAM,approximate,0.5223,0.005174,0.899
+3,full,Full (RC Array),exact,4.067,0.072293,9.0
+3,sklansky,Sklansky,exact,8.722,0.267836,33.344
+3,carrysel,Carry-Select,exact,7.773,0.267836,33.344
+3,rbr,RBR,exact,16.872,0.324836,40.44
+3,mitchell,Mitchell,approximate,8.908,0.08474,12.0
+3,alm_soa,ALM-SOA,approximate,9.4951,0.090931,14.438
+3,ilm_aa,ILM-AA,approximate,26.3291,0.10951,21.089
+3,cgpm1,CGPM1,approximate,2.1148,0.036698,3.944
+3,tam1,TAM1,approximate,1.3494,0.02616,3.168
+3,hocm,HOCM (1StepTrunc),approximate,1.5861,0.032773,3.72
+3,cgpm3,CGPM3,approximate,2.3589,0.043726,5.122
+3,bam,BAM,approximate,1.2364,0.01677,1.874
+4,full,Full (RC Array),exact,7.595,0.135005,16.0
+4,sklansky,Sklansky,exact,12.656,0.492024,58.312
+4,carrysel,Carry-Select,exact,11.052,0.492024,58.312
+4,rbr,RBR,exact,22.528,0.49594,58.776
+4,mitchell,Mitchell,approximate,8.908,0.112986,16.0
+4,alm_soa,ALM-SOA,approximate,9.5779,0.121658,19.332
+4,ilm_aa,ILM-AA,approximate,26.7797,0.146628,28.308
+4,cgpm1,CGPM1,approximate,3.9494,0.069055,7.078
+4,tam1,TAM1,approximate,2.52,0.052166,5.984
+4,hocm,HOCM (1StepTrunc),approximate,2.9621,0.062777,6.96
+4,cgpm3,CGPM3,approximate,4.4051,0.0821,9.166
+4,bam,BAM,approximate,2.4532,0.034363,3.595
+5,full,Full (RC Array),exact,12.201,0.216879,25.0
+5,sklansky,Sklansky,exact,16.856,0.783262,90.288
+5,carrysel,Carry-Select,exact,14.675,0.783262,90.288
+5,rbr,RBR,exact,28.2,0.698457,80.512
+5,mitchell,Mitchell,approximate,11.292,0.141233,20.0
+5,alm_soa,ALM-SOA,approximate,12.2226,0.152593,24.266
+5,ilm_aa,ILM-AA,approximate,34.3896,0.184053,35.621
+5,cgpm1,CGPM1,approximate,6.3445,0.111774,11.165
+5,tam1,TAM1,approximate,4.2581,0.086995,9.68
+5,hocm,HOCM (1StepTrunc),approximate,4.9725,0.102367,11.2
+5,cgpm3,CGPM3,approximate,7.0766,0.132601,14.418
+5,bam,BAM,approximate,3.8018,0.052334,5.366
+6,full,Full (RC Array),exact,17.885,0.317915,36.0
+6,sklansky,Sklansky,exact,21.283,1.141484,129.259
+6,carrysel,Carry-Select,exact,18.642,1.141484,129.259
+6,rbr,RBR,exact,33.888,0.932386,105.581
+6,mitchell,Mitchell,approximate,11.292,0.169479,24.0
+6,alm_soa,ALM-SOA,approximate,12.2891,0.183737,29.241
+6,ilm_aa,ILM-AA,approximate,34.7516,0.221785,43.029
+6,cgpm1,CGPM1,approximate,9.3002,0.165077,16.229
+6,tam1,TAM1,approximate,6.2418,0.122842,13.464
+6,hocm,HOCM (1StepTrunc),approximate,7.289,0.14783,15.66
+6,cgpm3,CGPM3,approximate,10.3733,0.195418,20.9
+6,bam,BAM,approximate,5.7769,0.080918,8.088
+7,full,Full (RC Array),exact,24.647,0.438113,49.0
+7,sklansky,Sklansky,exact,25.911,1.566648,175.219
+7,carrysel,Carry-Select,exact,22.953,1.566648,175.219
+7,rbr,RBR,exact,39.592,1.197728,133.958
+7,mitchell,Mitchell,approximate,11.292,0.197726,28.0
+7,alm_soa,ALM-SOA,approximate,12.3454,0.215088,34.256
+7,ilm_aa,ILM-AA,approximate,35.0577,0.259824,50.531
+7,cgpm1,CGPM1,approximate,11.9356,0.229188,22.295
+7,tam1,TAM1,approximate,8.2906,0.173893,18.788
+7,hocm,HOCM (1StepTrunc),approximate,9.3545,0.201532,20.86
+7,cgpm3,CGPM3,approximate,13.3127,0.27074,28.634
+7,bam,BAM,approximate,7.2269,0.107417,10.655
+8,full,Full (RC Array),exact,32.487,0.577473,64.0
+8,sklansky,Sklansky,exact,30.72,2.058723,228.164
+8,carrysel,Carry-Select,exact,27.608,2.058723,228.164
+8,rbr,RBR,exact,45.312,1.494483,165.63
+8,mitchell,Mitchell,approximate,11.292,0.225972,32.0
+8,alm_soa,ALM-SOA,approximate,12.3941,0.246649,39.312
+8,ilm_aa,ILM-AA,approximate,35.3228,0.29817,58.128
+8,cgpm1,CGPM1,approximate,14.3562,0.304328,29.389
+8,tam1,TAM1,approximate,9.972,0.223136,23.936
+8,hocm,HOCM (1StepTrunc),approximate,11.5954,0.268525,27.84
+8,cgpm3,CGPM3,approximate,16.0126,0.358755,37.645
+8,bam,BAM,approximate,8.9174,0.146983,14.378
+9,full,Full (RC Array),exact,41.405,0.735995,81.0
+9,sklansky,Sklansky,exact,35.698,2.617688,288.09
+9,carrysel,Carry-Select,exact,32.607,2.617688,288.09
+9,rbr,RBR,exact,51.048,1.82265,200.592
+9,mitchell,Mitchell,approximate,13.932,0.254219,36.0
+9,alm_soa,ALM-SOA,approximate,15.3448,0.278417,44.408
+9,ilm_aa,ILM-AA,approximate,43.8696,0.336824,65.819
+9,cgpm1,CGPM1,approximate,15.0905,0.390721,37.535
+9,tam1,TAM1,approximate,12.0863,0.290407,30.888
+9,hocm,HOCM (1StepTrunc),approximate,14.0099,0.3451,35.82
+9,cgpm3,CGPM3,approximate,17.21,0.459652,47.954
+9,bam,BAM,approximate,10.3255,0.182013,17.742
+10,full,Full (RC Array),exact,51.401,0.913679,100.0
+10,sklansky,Sklansky,exact,40.833,3.243525,354.996
+10,carrysel,Carry-Select,exact,37.95,3.243525,354.996
+10,rbr,RBR,exact,56.8,2.18223,238.84
+10,mitchell,Mitchell,approximate,13.932,0.282465,40.0
+10,alm_soa,ALM-SOA,approximate,15.3922,0.310394,49.545
+10,ilm_aa,ILM-AA,approximate,44.1277,0.375785,73.605
+10,cgpm1,CGPM1,approximate,17.5633,0.48859,46.76
+10,tam1,TAM1,approximate,14.3602,0.366495,38.72
+10,hocm,HOCM (1StepTrunc),approximate,16.3055,0.424861,43.5
+10,cgpm3,CGPM3,approximate,20.03,0.573619,59.585
+10,bam,BAM,approximate,11.8252,0.220476,21.464
+11,full,Full (RC Array),exact,62.475,1.110525,121.0
+11,sklansky,Sklansky,exact,46.117,3.936219,428.88
+11,carrysel,Carry-Select,exact,43.637,3.936219,428.88
+11,rbr,RBR,exact,62.568,2.573222,280.372
+11,mitchell,Mitchell,approximate,13.932,0.310712,44.0
+11,alm_soa,ALM-SOA,approximate,15.4351,0.342579,54.722
+11,ilm_aa,ILM-AA,approximate,44.3611,0.415053,81.485
+11,cgpm1,CGPM1,approximate,20.1952,0.598157,57.088
+11,tam1,TAM1,approximate,16.5121,0.436537,45.98
+11,hocm,HOCM (1StepTrunc),approximate,18.749,0.512861,51.92
+11,cgpm3,CGPM3,approximate,23.0316,0.700845,72.561
+11,bam,BAM,approximate,13.8686,0.276119,26.626
+12,full,Full (RC Array),exact,74.627,1.326533,144.0
+12,sklansky,Sklansky,exact,51.542,4.695759,509.742
+12,carrysel,Carry-Select,exact,49.668,4.695759,509.742
+12,rbr,RBR,exact,68.352,2.995627,325.186
+12,mitchell,Mitchell,approximate,13.932,0.338958,48.0
+12,alm_soa,ALM-SOA,approximate,15.4743,0.374973,59.94
+12,ilm_aa,ILM-AA,approximate,44.5743,0.454628,89.46
+12,cgpm1,CGPM1,approximate,22.9864,0.719644,68.544
+12,tam1,TAM1,approximate,19.119,0.528844,55.44
+12,hocm,HOCM (1StepTrunc),approximate,21.7322,0.616838,62.64
+12,cgpm3,CGPM3,approximate,26.2148,0.841519,86.904
+12,bam,BAM,approximate,15.5709,0.323111,31.144
+13,full,Full (RC Array),exact,87.857,1.561703,169.0
+13,sklansky,Sklansky,exact,57.104,5.522136,597.579
+13,carrysel,Carry-Select,exact,56.043,5.522136,597.579
+13,rbr,RBR,exact,74.152,3.449444,373.282
+13,mitchell,Mitchell,approximate,13.932,0.367205,52.0
+13,alm_soa,ALM-SOA,approximate,15.5104,0.407574,65.198
+13,ilm_aa,ILM-AA,approximate,44.7704,0.49451,97.529
+13,cgpm1,CGPM1,approximate,25.9367,0.853275,81.154
+13,tam1,TAM1,approximate,21.573,0.612284,64.064
+13,hocm,HOCM (1StepTrunc),approximate,24.8955,0.730396,74.36
+13,cgpm3,CGPM3,approximate,29.5795,0.99583,102.638
+13,bam,BAM,approximate,17.8562,0.389734,37.307
+14,full,Full (RC Array),exact,102.165,1.816035,196.0
+14,sklansky,Sklansky,exact,62.797,6.415341,692.391
+14,carrysel,Carry-Select,exact,62.762,6.415341,692.391
+14,rbr,RBR,exact,79.968,3.934675,424.659
+14,mitchell,Mitchell,approximate,13.932,0.395451,56.0
+14,alm_soa,ALM-SOA,approximate,15.5437,0.440385,70.497
+14,ilm_aa,ILM-AA,approximate,44.9519,0.5347,105.693
+14,cgpm1,CGPM1,approximate,29.0463,0.999273,94.942
+14,tam1,TAM1,approximate,24.5148,0.72081,75.152
+14,hocm,HOCM (1StepTrunc),approximate,27.8802,0.844456,85.26
+14,cgpm3,CGPM3,approximate,33.1258,1.163965,119.785
+14,bam,BAM,approximate,19.7611,0.445258,42.621
+15,full,Full (RC Array),exact,117.551,2.089529,225.0
+15,sklansky,Sklansky,exact,68.617,7.375367,794.178
+15,carrysel,Carry-Select,exact,69.825,7.375367,794.178
+15,rbr,RBR,exact,85.8,4.451317,479.317
+15,mitchell,Mitchell,approximate,13.932,0.423698,60.0
+15,alm_soa,ALM-SOA,approximate,15.5748,0.473403,75.836
+15,ilm_aa,ILM-AA,approximate,45.1209,0.575196,113.951
+15,cgpm1,CGPM1,approximate,31.7559,1.15786,109.935
+15,tam1,TAM1,approximate,26.8018,0.817647,85.14
+15,hocm,HOCM (1StepTrunc),approximate,30.4811,0.966755,96.9
+15,cgpm3,CGPM3,approximate,36.2161,1.346114,138.369
+15,bam,BAM,approximate,21.9025,0.52286,49.785
+16,full,Full (RC Array),exact,134.015,2.382185,256.0
+16,sklansky,Sklansky,exact,74.56,8.40221,902.938
+16,carrysel,Carry-Select,exact,77.232,8.40221,902.938
+16,rbr,RBR,exact,91.648,4.999373,537.254
+16,mitchell,Mitchell,approximate,13.932,0.451944,64.0
+16,alm_soa,ALM-SOA,approximate,15.6038,0.50663,81.216
+16,ilm_aa,ILM-AA,approximate,45.279,0.616,122.304
+16,cgpm1,CGPM1,approximate,34.5064,1.329259,126.157
+16,tam1,TAM1,approximate,29.4956,0.942392,97.856
+16,hocm,HOCM (1StepTrunc),approximate,33.552,1.107716,111.36
+16,cgpm3,CGPM3,approximate,39.3528,1.542465,158.413
+16,bam,BAM,approximate,23.5516,0.586915,55.895
+17,full,Full (RC Array),exact,151.557,2.694003,289.0
+17,sklansky,Sklansky,exact,80.623,9.495862,1018.671
+17,carrysel,Carry-Select,exact,84.983,9.495862,1018.671
+17,rbr,RBR,exact,97.512,5.578841,598.472
+17,mitchell,Mitchell,approximate,17.084,0.480191,68.0
+17,alm_soa,ALM-SOA,approximate,19.1676,0.540065,86.636
+17,ilm_aa,ILM-AA,approximate,55.7051,0.657111,130.751
+17,cgpm1,CGPM1,approximate,35.7751,1.513693,143.633
+17,tam1,TAM1,approximate,31.8941,1.052626,109.208
+17,hocm,HOCM (1StepTrunc),approximate,36.6913,1.258258,126.82
+17,cgpm3,CGPM3,approximate,41.15,1.753207,179.939
+17,bam,BAM,approximate,25.7709,0.675495,64.061
+18,full,Full (RC Array),exact,170.177,3.024983,324.0
+18,sklansky,Sklansky,exact,86.803,10.65632,1141.378
+18,carrysel,Carry-Select,exact,93.078,10.65632,1141.378
+18,rbr,RBR,exact,103.392,6.189721,662.969
+18,mitchell,Mitchell,approximate,17.084,0.508438,72.0
+18,alm_soa,ALM-SOA,approximate,19.1991,0.573708,92.097
+18,ilm_aa,ILM-AA,approximate,55.8768,0.69853,139.293
+18,cgpm1,CGPM1,approximate,38.5174,1.711384,162.389
+18,tam1,TAM1,approximate,34.7268,1.193591,123.552
+18,hocm,HOCM (1StepTrunc),approximate,39.5038,1.406617,140.94
+18,cgpm3,CGPM3,approximate,44.3043,1.978528,202.97
+18,bam,BAM,approximate,27.4876,0.748082,70.967
+19,full,Full (RC Array),exact,189.875,3.375125,361.0
+19,sklansky,Sklansky,exact,93.098,11.883579,1271.056
+19,carrysel,Carry-Select,exact,101.517,11.883579,1271.056
+19,rbr,RBR,exact,109.288,6.832015,730.745
+19,mitchell,Mitchell,approximate,17.084,0.536684,76.0
+19,alm_soa,ALM-SOA,approximate,19.229,0.60756,97.598
+19,ilm_aa,ILM-AA,approximate,56.0392,0.740255,147.929
+19,cgpm1,CGPM1,approximate,41.3107,1.922556,182.449
+19,tam1,TAM1,approximate,37.2452,1.317222,136.268
+19,hocm,HOCM (1StepTrunc),approximate,42.3687,1.563216,155.8
+19,cgpm3,CGPM3,approximate,47.5172,2.218617,227.529
+19,bam,BAM,approximate,29.7914,0.847639,80.134
+20,full,Full (RC Array),exact,210.651,3.744429,400.0
+20,sklansky,Sklansky,exact,99.505,13.177636,1407.706
+20,carrysel,Carry-Select,exact,110.3,13.177636,1407.706
+20,rbr,RBR,exact,115.2,7.505721,801.801
+20,mitchell,Mitchell,approximate,17.084,0.564931,80.0
+20,alm_soa,ALM-SOA,approximate,19.2573,0.64162,103.14
+20,ilm_aa,ILM-AA,approximate,56.1933,0.782288,156.66
+20,cgpm1,CGPM1,approximate,44.1537,2.14743,203.84
+20,tam1,TAM1,approximate,40.2107,1.474406,152.24
+20,hocm,HOCM (1StepTrunc),approximate,45.7383,1.741159,174.0
+20,cgpm3,CGPM3,approximate,50.7874,2.473663,253.64
+20,bam,BAM,approximate,31.5729,0.928759,87.836
+21,full,Full (RC Array),exact,232.505,4.132895,441.0
+21,sklansky,Sklansky,exact,106.023,14.538488,1551.327
+21,carrysel,Carry-Select,exact,119.427,14.538488,1551.327
+21,rbr,RBR,exact,121.128,8.210839,876.136
+21,mitchell,Mitchell,approximate,17.084,0.593177,84.0
+21,alm_soa,ALM-SOA,approximate,19.2842,0.675888,108.722
+21,ilm_aa,ILM-AA,approximate,56.3398,0.824627,165.485
+21,cgpm1,CGPM1,approximate,47.0459,2.38623,226.586
+21,tam1,TAM1,approximate,43.236,1.640405,169.092
+21,hocm,HOCM (1StepTrunc),approximate,49.1717,1.928684,193.2
+21,cgpm3,CGPM3,approximate,54.1141,2.743855,281.325
+21,bam,BAM,approximate,33.3821,1.013309,95.897
+22,full,Full (RC Array),exact,255.437,4.540523,484.0
+22,sklansky,Sklansky,exact,112.649,15.966132,1701.92
+22,carrysel,Carry-Select,exact,128.898,15.966132,1701.92
+22,rbr,RBR,exact,127.072,8.94737,953.751
+22,mitchell,Mitchell,approximate,17.084,0.621424,88.0
+22,alm_soa,ALM-SOA,approximate,19.3099,0.710365,114.345
+22,ilm_aa,ILM-AA,approximate,56.4796,0.867274,174.405
+22,cgpm1,CGPM1,approximate,49.9861,2.639179,250.712
+22,tam1,TAM1,approximate,45.938,1.784838,183.92
+22,hocm,HOCM (1StepTrunc),approximate,52.2447,2.111343,210.54
+22,cgpm3,CGPM3,approximate,57.496,3.02938,310.607
+22,bam,BAM,approximate,35.8019,1.128946,106.503
+23,full,Full (RC Array),exact,279.447,4.967313,529.0
+23,sklansky,Sklansky,exact,119.382,17.460564,1859.484
+23,carrysel,Carry-Select,exact,138.713,17.460564,1859.484
+23,rbr,RBR,exact,133.032,9.715314,1034.644
+23,mitchell,Mitchell,approximate,17.084,0.64967,92.0
+23,alm_soa,ALM-SOA,approximate,19.3344,0.74505,120.008
+23,ilm_aa,ILM-AA,approximate,56.6131,0.910229,183.419
+23,cgpm1,CGPM1,approximate,52.9738,2.906499,276.244
+23,tam1,TAM1,approximate,49.089,1.967056,202.4
+23,hocm,HOCM (1StepTrunc),approximate,55.3673,2.302242,228.62
+23,cgpm3,CGPM3,approximate,60.9326,3.330428,341.509
+23,bam,BAM,approximate,37.6728,1.222027,115.359
+24,full,Full (RC Array),exact,304.535,5.413265,576.0
+24,sklansky,Sklansky,exact,126.221,19.021782,2024.018
+24,carrysel,Carry-Select,exact,148.872,19.021782,2024.018
+24,rbr,RBR,exact,139.008,10.51467,1118.816
+24,mitchell,Mitchell,approximate,17.084,0.677917,96.0
+24,alm_soa,ALM-SOA,approximate,19.3579,0.779943,125.712
+24,ilm_aa,ILM-AA,approximate,56.741,0.95349,192.528
+24,cgpm1,CGPM1,approximate,56.0085,3.188413,303.206
+24,tam1,TAM1,approximate,51.9012,2.124887,218.592
+24,hocm,HOCM (1StepTrunc),approximate,59.0145,2.517168,250.56
+24,cgpm3,CGPM3,approximate,64.4232,3.647187,374.054
+24,bam,BAM,approximate,40.1698,1.348642,126.966
+25,full,Full (RC Array),exact,330.701,5.878379,625.0
+25,sklansky,Sklansky,exact,133.163,20.649785,2195.523
+25,carrysel,Carry-Select,exact,159.375,20.649785,2195.523
+25,rbr,RBR,exact,145.0,11.345439,1206.268
+25,mitchell,Mitchell,approximate,17.084,0.706163,100.0
+25,alm_soa,ALM-SOA,approximate,19.3805,0.815045,131.456
+25,ilm_aa,ILM-AA,approximate,56.8636,0.997058,201.731
+25,cgpm1,CGPM1,approximate,57.8194,3.485144,331.625
+25,tam1,TAM1,approximate,55.1743,2.323323,238.7
+25,hocm,HOCM (1StepTrunc),approximate,62.7215,2.741676,273.5
+25,cgpm3,CGPM3,approximate,66.8079,3.979846,408.266
+25,bam,BAM,approximate,42.1008,1.450256,136.619
+26,full,Full (RC Array),exact,357.945,6.362655,676.0
+26,sklansky,Sklansky,exact,140.208,22.344569,2373.998
+26,carrysel,Carry-Select,exact,170.222,22.344569,2373.998
+26,rbr,RBR,exact,151.008,12.207621,1296.998
+26,mitchell,Mitchell,approximate,17.084,0.73441,104.0
+26,alm_soa,ALM-SOA,approximate,19.4021,0.850355,137.241
+26,ilm_aa,ILM-AA,approximate,56.9814,1.040934,211.029
+26,cgpm1,CGPM1,approximate,60.8783,3.796914,361.525
+26,tam1,TAM1,approximate,58.0933,2.494552,256.256
+26,hocm,HOCM (1StepTrunc),approximate,66.0398,2.958635,294.06
+26,cgpm3,CGPM3,approximate,70.3424,4.328594,444.166
+26,bam,BAM,approximate,44.6724,1.587847,149.227
+27,full,Full (RC Array),exact,386.267,6.866093,729.0
+27,sklansky,Sklansky,exact,147.355,24.106133,2559.443
+27,carrysel,Carry-Select,exact,181.413,24.106133,2559.443
+27,rbr,RBR,exact,157.032,13.101215,1391.007
+27,mitchell,Mitchell,approximate,17.084,0.762656,108.0
+27,alm_soa,ALM-SOA,approximate,19.423,0.885873,143.066
+27,ilm_aa,ILM-AA,approximate,57.0948,1.085117,220.421
+27,cgpm1,CGPM1,approximate,63.9815,4.123947,392.931
+27,tam1,TAM1,approximate,61.4857,2.709208,277.992
+27,hocm,HOCM (1StepTrunc),approximate,69.4061,3.183833,315.36
+27,cgpm3,CGPM3,approximate,73.928,4.693618,481.778
+27,bam,BAM,approximate,46.6624,1.697994,159.676
+28,full,Full (RC Array),exact,415.667,7.388693,784.0
+28,sklansky,Sklansky,exact,154.602,25.934476,2751.857
+28,carrysel,Carry-Select,exact,192.948,25.934476,2751.857
+28,rbr,RBR,exact,163.072,14.026222,1488.295
+28,mitchell,Mitchell,approximate,17.084,0.790903,112.0
+28,alm_soa,ALM-SOA,approximate,19.443,0.9216,148.932
+28,ilm_aa,ILM-AA,approximate,57.204,1.129607,229.908
+28,cgpm1,CGPM1,approximate,67.1282,4.466465,425.869
+28,tam1,TAM1,approximate,64.5096,2.893834,296.912
+28,hocm,HOCM (1StepTrunc),approximate,73.3155,3.435742,341.04
+28,cgpm3,CGPM3,approximate,77.5638,5.075109,521.125
+28,bam,BAM,approximate,49.307,1.846562,173.285
+29,full,Full (RC Array),exact,446.145,7.930455,841.0
+29,sklansky,Sklansky,exact,161.949,27.829595,2951.242
+29,carrysel,Carry-Select,exact,204.827,27.829595,2951.242
+29,rbr,RBR,exact,169.128,14.982641,1588.862
+29,mitchell,Mitchell,approximate,17.084,0.819149,116.0
+29,alm_soa,ALM-SOA,approximate,19.4624,0.957534,154.838
+29,ilm_aa,ILM-AA,approximate,57.3094,1.174404,239.489
+29,cgpm1,CGPM1,approximate,70.3183,4.824691,460.363
+29,tam1,TAM1,approximate,68.0186,3.124709,320.276
+29,hocm,HOCM (1StepTrunc),approximate,77.2832,3.697233,367.72
+29,cgpm3,CGPM3,approximate,81.2498,5.473253,562.23
+29,bam,BAM,approximate,51.3546,1.965242,184.531
+30,full,Full (RC Array),exact,477.701,8.491379,900.0
+30,sklansky,Sklansky,exact,169.394,29.79149,3157.596
+30,carrysel,Carry-Select,exact,217.05,29.79149,3157.596
+30,rbr,RBR,exact,175.2,15.970473,1692.708
+30,mitchell,Mitchell,approximate,17.084,0.847396,120.0
+30,alm_soa,ALM-SOA,approximate,19.4811,0.993678,160.785
+30,ilm_aa,ILM-AA,approximate,57.4112,1.219509,249.165
+30,cgpm1,CGPM1,approximate,73.5509,5.198847,496.44
+30,tam1,TAM1,approximate,71.1455,3.322733,340.56
+30,hocm,HOCM (1StepTrunc),approximate,80.836,3.948491,391.5
+30,cgpm3,CGPM3,approximate,84.985,5.888241,605.115
+30,bam,BAM,approximate,54.0706,2.124786,199.141
+31,full,Full (RC Array),exact,510.335,9.071465,961.0
+31,sklansky,Sklansky,exact,176.937,31.820157,3370.919
+31,carrysel,Carry-Select,exact,229.617,31.820157,3370.919
+31,rbr,RBR,exact,181.288,16.989718,1799.833
+31,mitchell,Mitchell,approximate,17.084,0.875642,124.0
+31,alm_soa,ALM-SOA,approximate,19.4992,1.030029,166.772
+31,ilm_aa,ILM-AA,approximate,57.5097,1.26492,258.935
+31,cgpm1,CGPM1,approximate,76.826,5.589156,534.124
+31,tam1,TAM1,approximate,74.7685,3.569826,365.552
+31,hocm,HOCM (1StepTrunc),approximate,84.4355,4.207989,416.02
+31,cgpm3,CGPM3,approximate,88.7693,6.32026,649.804
+31,bam,BAM,approximate,56.1746,2.251999,211.182
+32,full,Full (RC Array),exact,544.047,9.670713,1024.0
+32,sklansky,Sklansky,exact,184.576,33.915597,3591.211
+32,carrysel,Carry-Select,exact,242.528,33.915597,3591.211
+32,rbr,RBR,exact,187.392,18.040375,1910.236
+32,mitchell,Mitchell,approximate,17.084,0.903889,128.0
+32,alm_soa,ALM-SOA,approximate,19.5168,1.066589,172.8
+32,ilm_aa,ILM-AA,approximate,57.6051,1.310639,268.8
+32,cgpm1,CGPM1,approximate,80.1429,5.995842,573.44
+32,tam1,TAM1,approximate,78.444,3.825734,391.424
+32,hocm,HOCM (1StepTrunc),approximate,88.5965,4.496882,445.44
+32,cgpm3,CGPM3,approximate,92.6018,6.769499,696.32
+32,bam,BAM,approximate,58.3029,2.382639,223.581

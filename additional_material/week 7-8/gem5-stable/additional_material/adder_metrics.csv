@@ -1,0 +1,321 @@
+bit_precision,adder,label,family,latency_ns,energy_nj,area_ge
+1,full,Full (RCA),exact,0.676,0.007062,1.0
+1,sklansky,Sklansky,exact,1.757,0.016876,2.39
+1,kogge,Kogge-Stone,exact,1.663,0.0,0.0
+1,carrysel,Carry-Select,exact,0.676,0.01929,2.732
+1,rbr,RBR,exact,2.194,0.03055,4.326
+1,loa,LOA,approximate,0.2691,0.002123,0.61
+1,ccba,CCBA,approximate,0.3356,0.002897,0.44
+1,trua,TruA,approximate,0.2417,0.001863,0.52
+1,gear,GeAr,approximate,0.3726,0.004322,0.714
+1,csa,CSA,approximate,0.4134,0.004203,0.667
+2,full,Full (RCA),exact,0.676,0.014123,2.0
+2,sklansky,Sklansky,exact,1.757,0.024453,3.463
+2,kogge,Kogge-Stone,exact,1.663,0.016854,2.387
+2,carrysel,Carry-Select,exact,0.676,0.038579,5.463
+2,rbr,RBR,exact,2.194,0.061101,8.652
+2,loa,LOA,approximate,0.2691,0.006148,1.037
+2,ccba,CCBA,approximate,0.3356,0.005826,0.888
+2,trua,TruA,approximate,0.2417,0.005393,0.884
+2,gear,GeAr,approximate,0.3726,0.008643,1.428
+2,csa,CSA,approximate,0.4134,0.008406,1.334
+3,full,Full (RCA),exact,0.915,0.021185,3.0
+3,sklansky,Sklansky,exact,2.556,0.035935,5.089
+3,kogge,Kogge-Stone,exact,2.227,0.037222,5.271
+3,carrysel,Carry-Select,exact,0.915,0.057869,8.195
+3,rbr,RBR,exact,2.194,0.091651,12.979
+3,loa,LOA,approximate,0.3643,0.010174,1.464
+3,ccba,CCBA,approximate,0.4543,0.008786,1.346
+3,trua,TruA,approximate,0.3271,0.008924,1.248
+3,gear,GeAr,approximate,0.5043,0.012965,2.142
+3,csa,CSA,approximate,0.5595,0.012609,2.002
+4,full,Full (RCA),exact,1.154,0.028247,4.0
+4,sklansky,Sklansky,exact,2.556,0.049016,6.941
+4,kogge,Kogge-Stone,exact,2.227,0.05864,8.304
+4,carrysel,Carry-Select,exact,1.154,0.077158,10.926
+4,rbr,RBR,exact,2.194,0.122201,17.305
+4,loa,LOA,approximate,0.4594,0.014199,1.891
+4,ccba,CCBA,approximate,0.5729,0.011779,1.812
+4,trua,TruA,approximate,0.4126,0.012455,1.612
+4,gear,GeAr,approximate,0.636,0.017287,2.856
+4,csa,CSA,approximate,0.7057,0.016812,2.669
+5,full,Full (RCA),exact,1.393,0.035308,5.0
+5,sklansky,Sklansky,exact,3.152,0.062972,8.917
+5,kogge,Kogge-Stone,exact,2.823,0.080743,11.434
+5,carrysel,Carry-Select,exact,2.398,0.096448,13.658
+5,rbr,RBR,exact,2.194,0.152752,21.631
+5,loa,LOA,approximate,0.5546,0.018224,2.501
+5,ccba,CCBA,approximate,0.6916,0.014803,2.288
+5,trua,TruA,approximate,0.498,0.015986,2.132
+5,gear,GeAr,approximate,0.7677,0.021609,3.57
+5,csa,CSA,approximate,0.8518,0.021015,3.336
+6,full,Full (RCA),exact,1.632,0.04237,6.0
+6,sklansky,Sklansky,exact,3.152,0.077482,10.972
+6,kogge,Kogge-Stone,exact,2.823,0.103535,14.662
+6,carrysel,Carry-Select,exact,2.398,0.115738,16.39
+6,rbr,RBR,exact,2.194,0.183302,25.957
+6,loa,LOA,approximate,0.679,0.022249,3.111
+6,ccba,CCBA,approximate,0.8102,0.017859,2.773
+6,trua,TruA,approximate,0.6097,0.019517,2.652
+6,gear,GeAr,approximate,0.8994,0.02593,4.284
+6,csa,CSA,approximate,0.998,0.025219,4.003
+7,full,Full (RCA),exact,1.871,0.049431,7.0
+7,sklansky,Sklansky,exact,3.152,0.092374,13.081
+7,kogge,Kogge-Stone,exact,2.823,0.127117,18.001
+7,carrysel,Carry-Select,exact,2.398,0.135027,19.121
+7,rbr,RBR,exact,2.194,0.213852,30.284
+7,loa,LOA,approximate,0.8022,0.026274,3.721
+7,ccba,CCBA,approximate,0.9289,0.020947,3.267
+7,trua,TruA,approximate,0.7203,0.023047,3.172
+7,gear,GeAr,approximate,1.0312,0.030252,4.998
+7,csa,CSA,approximate,1.1441,0.029422,4.67
+8,full,Full (RCA),exact,2.11,0.056493,8.0
+8,sklansky,Sklansky,exact,3.152,0.107547,15.23
+8,kogge,Kogge-Stone,exact,2.823,0.151618,21.471
+8,carrysel,Carry-Select,exact,2.398,0.154317,21.853
+8,rbr,RBR,exact,2.194,0.244403,34.61
+8,loa,LOA,approximate,0.9255,0.030299,4.331
+8,ccba,CCBA,approximate,1.0475,0.024066,3.77
+8,trua,TruA,approximate,0.831,0.026578,3.692
+8,gear,GeAr,approximate,1.1629,0.034574,5.712
+8,csa,CSA,approximate,1.2903,0.033625,5.338
+9,full,Full (RCA),exact,2.349,0.063555,9.0
+9,sklansky,Sklansky,exact,3.812,0.122933,17.409
+9,kogge,Kogge-Stone,exact,3.483,0.177181,25.091
+9,carrysel,Carry-Select,exact,3.046,0.173606,24.584
+9,rbr,RBR,exact,2.194,0.274953,38.936
+9,loa,LOA,approximate,1.0492,0.034324,4.941
+9,ccba,CCBA,approximate,1.1966,0.027217,4.282
+9,trua,TruA,approximate,0.9422,0.030109,4.212
+9,gear,GeAr,approximate,1.3319,0.038895,6.426
+9,csa,CSA,approximate,1.4603,0.038616,6.242
+10,full,Full (RCA),exact,2.588,0.070616,10.0
+10,sklansky,Sklansky,exact,3.812,0.138487,19.611
+10,kogge,Kogge-Stone,exact,3.483,0.203949,28.881
+10,carrysel,Carry-Select,exact,3.046,0.192896,27.316
+10,rbr,RBR,exact,2.194,0.305503,43.262
+10,loa,LOA,approximate,1.1736,0.038349,5.551
+10,ccba,CCBA,approximate,1.3184,0.0304,4.803
+10,trua,TruA,approximate,1.0538,0.03364,4.732
+10,gear,GeAr,approximate,1.4674,0.043217,7.14
+10,csa,CSA,approximate,1.6089,0.042906,6.936
+11,full,Full (RCA),exact,2.827,0.077678,11.0
+11,sklansky,Sklansky,exact,3.812,0.154178,21.833
+11,kogge,Kogge-Stone,exact,3.483,0.232066,32.863
+11,carrysel,Carry-Select,exact,3.046,0.212186,30.048
+11,rbr,RBR,exact,2.194,0.336054,47.589
+11,loa,LOA,approximate,1.282,0.041741,5.978
+11,ccba,CCBA,approximate,1.4401,0.033615,5.333
+11,trua,TruA,approximate,1.1512,0.036615,5.096
+11,gear,GeAr,approximate,1.603,0.047539,7.854
+11,csa,CSA,approximate,1.7575,0.047197,7.63
+12,full,Full (RCA),exact,3.066,0.08474,12.0
+12,sklansky,Sklansky,exact,3.812,0.169982,24.071
+12,kogge,Kogge-Stone,exact,3.483,0.261673,37.056
+12,carrysel,Carry-Select,exact,3.046,0.231475,32.779
+12,rbr,RBR,exact,2.194,0.366604,51.915
+12,loa,LOA,approximate,1.4084,0.045766,6.588
+12,ccba,CCBA,approximate,1.5619,0.036862,5.872
+12,trua,TruA,approximate,1.2647,0.040145,5.616
+12,gear,GeAr,approximate,1.7385,0.051861,8.568
+12,csa,CSA,approximate,1.9061,0.051488,8.323
+13,full,Full (RCA),exact,3.305,0.091801,13.0
+13,sklansky,Sklansky,exact,3.812,0.18588,26.323
+13,kogge,Kogge-Stone,exact,3.483,0.292914,41.48
+13,carrysel,Carry-Select,exact,3.046,0.250765,35.511
+13,rbr,RBR,exact,2.194,0.397154,56.241
+13,loa,LOA,approximate,1.5354,0.049791,7.198
+13,ccba,CCBA,approximate,1.6836,0.04014,6.421
+13,trua,TruA,approximate,1.3788,0.043676,6.136
+13,gear,GeAr,approximate,1.874,0.056182,9.282
+13,csa,CSA,approximate,2.0547,0.055778,9.017
+14,full,Full (RCA),exact,3.544,0.098863,14.0
+14,sklansky,Sklansky,exact,3.812,0.201859,28.585
+14,kogge,Kogge-Stone,exact,3.483,0.325927,46.155
+14,carrysel,Carry-Select,exact,3.046,0.270054,38.242
+14,rbr,RBR,exact,2.194,0.427705,60.567
+14,loa,LOA,approximate,1.6465,0.053182,7.625
+14,ccba,CCBA,approximate,1.8054,0.04345,6.978
+14,trua,TruA,approximate,1.4785,0.046651,6.5
+14,gear,GeAr,approximate,2.0095,0.060504,9.996
+14,csa,CSA,approximate,2.2032,0.060069,9.71
+15,full,Full (RCA),exact,3.783,0.105924,15.0
+15,sklansky,Sklansky,exact,3.812,0.217907,30.858
+15,kogge,Kogge-Stone,exact,3.483,0.360852,51.1
+15,carrysel,Carry-Select,exact,3.046,0.289344,40.974
+15,rbr,RBR,exact,2.194,0.458255,64.894
+15,loa,LOA,approximate,1.7751,0.057207,8.235
+15,ccba,CCBA,approximate,1.9271,0.046792,7.545
+15,trua,TruA,approximate,1.594,0.050182,7.02
+15,gear,GeAr,approximate,2.145,0.064826,10.71
+15,csa,CSA,approximate,2.3518,0.06436,10.404
+16,full,Full (RCA),exact,4.022,0.112986,16.0
+16,sklansky,Sklansky,exact,3.812,0.234016,33.139
+16,kogge,Kogge-Stone,exact,3.483,0.397827,56.336
+16,carrysel,Carry-Select,exact,3.046,0.308634,43.706
+16,rbr,RBR,exact,2.194,0.488805,69.22
+16,loa,LOA,approximate,1.9042,0.061232,8.845
+16,ccba,CCBA,approximate,2.0489,0.050166,8.12
+16,trua,TruA,approximate,1.7099,0.053713,7.54
+16,gear,GeAr,approximate,2.2805,0.069148,11.424
+16,csa,CSA,approximate,2.5004,0.06865,11.098
+17,full,Full (RCA),exact,4.261,0.120048,17.0
+17,sklansky,Sklansky,exact,4.6,0.250178,35.428
+17,kogge,Kogge-Stone,exact,4.271,0.43699,61.882
+17,carrysel,Carry-Select,exact,4.342,0.327923,46.437
+17,rbr,RBR,exact,2.194,0.519356,73.546
+17,loa,LOA,approximate,2.0173,0.064623,9.272
+17,ccba,CCBA,approximate,2.2157,0.053571,8.705
+17,trua,TruA,approximate,1.8115,0.056687,7.904
+17,gear,GeAr,approximate,2.4714,0.077551,13.209
+17,csa,CSA,approximate,2.6844,0.07443,12.24
+18,full,Full (RCA),exact,4.5,0.127109,18.0
+18,sklansky,Sklansky,exact,4.6,0.266386,37.723
+18,kogge,Kogge-Stone,exact,4.271,0.478477,67.757
+18,carrysel,Carry-Select,exact,4.342,0.347213,49.169
+18,rbr,RBR,exact,2.194,0.549906,77.872
+18,loa,LOA,approximate,2.1478,0.068649,9.882
+18,ccba,CCBA,approximate,2.34,0.057009,9.298
+18,trua,TruA,approximate,1.9286,0.060218,8.424
+18,gear,GeAr,approximate,2.61,0.082113,13.986
+18,csa,CSA,approximate,2.835,0.078808,12.96
+19,full,Full (RCA),exact,4.739,0.134171,19.0
+19,sklansky,Sklansky,exact,4.6,0.282637,40.024
+19,kogge,Kogge-Stone,exact,4.271,0.522424,73.981
+19,carrysel,Carry-Select,exact,4.342,0.366502,51.901
+19,rbr,RBR,exact,2.194,0.580456,82.199
+19,loa,LOA,approximate,2.2786,0.072674,10.492
+19,ccba,CCBA,approximate,2.4643,0.060478,9.901
+19,trua,TruA,approximate,2.0461,0.063749,8.944
+19,gear,GeAr,approximate,2.7486,0.086674,14.763
+19,csa,CSA,approximate,2.9856,0.083186,13.68
+20,full,Full (RCA),exact,4.978,0.141233,20.0
+20,sklansky,Sklansky,exact,4.6,0.298926,42.331
+20,kogge,Kogge-Stone,exact,4.271,0.568967,80.572
+20,carrysel,Carry-Select,exact,4.342,0.385792,54.632
+20,rbr,RBR,exact,2.194,0.611007,86.525
+20,loa,LOA,approximate,2.3936,0.076065,10.919
+20,ccba,CCBA,approximate,2.5886,0.063978,10.512
+20,trua,TruA,approximate,2.1493,0.066724,9.308
+20,gear,GeAr,approximate,2.8872,0.091236,15.54
+20,csa,CSA,approximate,3.1361,0.087564,14.4
+21,full,Full (RCA),exact,5.217,0.148294,21.0
+21,sklansky,Sklansky,exact,4.6,0.315248,44.642
+21,kogge,Kogge-Stone,exact,4.271,0.618239,87.549
+21,carrysel,Carry-Select,exact,4.342,0.405082,57.364
+21,rbr,RBR,exact,2.194,0.641557,90.851
+21,loa,LOA,approximate,2.5256,0.08009,11.529
+21,ccba,CCBA,approximate,2.7128,0.067511,11.133
+21,trua,TruA,approximate,2.2678,0.070254,9.828
+21,gear,GeAr,approximate,3.0259,0.095798,16.317
+21,csa,CSA,approximate,3.2867,0.091942,15.12
+22,full,Full (RCA),exact,5.456,0.155356,22.0
+22,sklansky,Sklansky,exact,4.6,0.331601,46.958
+22,kogge,Kogge-Stone,exact,4.271,0.670376,94.932
+22,carrysel,Carry-Select,exact,4.342,0.424371,60.095
+22,rbr,RBR,exact,2.194,0.672107,95.177
+22,loa,LOA,approximate,2.6579,0.084115,12.139
+22,ccba,CCBA,approximate,2.8371,0.071075,11.763
+22,trua,TruA,approximate,2.3867,0.073785,10.348
+22,gear,GeAr,approximate,3.1645,0.10036,17.094
+22,csa,CSA,approximate,3.4373,0.096321,15.84
+23,full,Full (RCA),exact,5.695,0.162418,23.0
+23,sklansky,Sklansky,exact,4.6,0.347982,49.278
+23,kogge,Kogge-Stone,exact,4.271,0.725512,102.74
+23,carrysel,Carry-Select,exact,4.342,0.443661,62.827
+23,rbr,RBR,exact,2.194,0.702657,99.504
+23,loa,LOA,approximate,2.7743,0.087506,12.566
+23,ccba,CCBA,approximate,2.9614,0.074671,12.402
+23,trua,TruA,approximate,2.4912,0.07676,10.712
+23,gear,GeAr,approximate,3.3031,0.104922,17.871
+23,csa,CSA,approximate,3.5878,0.100699,16.56
+24,full,Full (RCA),exact,5.934,0.169479,24.0
+24,sklansky,Sklansky,exact,4.6,0.364389,51.601
+24,kogge,Kogge-Stone,exact,4.271,0.78378,110.991
+24,carrysel,Carry-Select,exact,4.342,0.46295,65.559
+24,rbr,RBR,exact,2.194,0.733208,103.83
+24,loa,LOA,approximate,2.9077,0.091531,13.176
+24,ccba,CCBA,approximate,3.0857,0.078299,13.05
+24,trua,TruA,approximate,2.611,0.080291,11.232
+24,gear,GeAr,approximate,3.4417,0.109484,18.648
+24,csa,CSA,approximate,3.7384,0.105077,17.28
+25,full,Full (RCA),exact,6.173,0.176541,25.0
+25,sklansky,Sklansky,exact,4.6,0.38082,53.928
+25,kogge,Kogge-Stone,exact,4.271,0.845314,119.705
+25,carrysel,Carry-Select,exact,4.342,0.48224,68.29
+25,rbr,RBR,exact,2.194,0.763758,108.156
+25,loa,LOA,approximate,3.0413,0.095557,13.786
+25,ccba,CCBA,approximate,3.21,0.081959,13.707
+25,trua,TruA,approximate,2.731,0.083822,11.752
+25,gear,GeAr,approximate,3.5803,0.120048,21.0
+25,csa,CSA,approximate,3.889,0.109455,18.0
+26,full,Full (RCA),exact,6.412,0.183602,26.0
+26,sklansky,Sklansky,exact,4.6,0.397272,56.258
+26,kogge,Kogge-Stone,exact,4.271,0.910247,128.9
+26,carrysel,Carry-Select,exact,4.342,0.50153,71.022
+26,rbr,RBR,exact,2.194,0.794308,112.482
+26,loa,LOA,approximate,3.1591,0.098948,14.213
+26,ccba,CCBA,approximate,3.3342,0.085651,14.373
+26,trua,TruA,approximate,2.8367,0.086796,12.116
+26,gear,GeAr,approximate,3.719,0.12485,21.84
+26,csa,CSA,approximate,4.0396,0.113834,18.72
+27,full,Full (RCA),exact,6.651,0.190664,27.0
+27,sklansky,Sklansky,exact,4.6,0.413744,58.59
+27,kogge,Kogge-Stone,exact,4.271,0.978712,138.596
+27,carrysel,Carry-Select,exact,4.342,0.520819,73.753
+27,rbr,RBR,exact,2.194,0.824859,116.809
+27,loa,LOA,approximate,3.2936,0.102973,14.823
+27,ccba,CCBA,approximate,3.4585,0.089374,15.048
+27,trua,TruA,approximate,2.9575,0.090327,12.636
+27,gear,GeAr,approximate,3.8576,0.129652,22.68
+27,csa,CSA,approximate,4.1901,0.118212,19.44
+28,full,Full (RCA),exact,6.89,0.197726,28.0
+28,sklansky,Sklansky,exact,4.6,0.430235,60.926
+28,kogge,Kogge-Stone,exact,4.271,1.050842,148.81
+28,carrysel,Carry-Select,exact,4.342,0.540109,76.485
+28,rbr,RBR,exact,2.194,0.855409,121.135
+28,loa,LOA,approximate,3.4284,0.106998,15.433
+28,ccba,CCBA,approximate,3.5828,0.093129,15.732
+28,trua,TruA,approximate,3.0786,0.093858,13.156
+28,gear,GeAr,approximate,3.9962,0.134453,23.52
+28,csa,CSA,approximate,4.3407,0.12259,20.16
+29,full,Full (RCA),exact,7.129,0.204787,29.0
+29,sklansky,Sklansky,exact,4.6,0.446744,63.263
+29,kogge,Kogge-Stone,exact,4.271,1.126769,159.562
+29,carrysel,Carry-Select,exact,4.342,0.559398,79.217
+29,rbr,RBR,exact,2.194,0.885959,125.461
+29,loa,LOA,approximate,3.5473,0.110389,15.86
+29,ccba,CCBA,approximate,3.7071,0.096916,16.426
+29,trua,TruA,approximate,3.1854,0.096833,13.52
+29,gear,GeAr,approximate,4.1348,0.139255,24.36
+29,csa,CSA,approximate,4.4913,0.126968,20.88
+30,full,Full (RCA),exact,7.368,0.211849,30.0
+30,sklansky,Sklansky,exact,4.6,0.463268,65.604
+30,kogge,Kogge-Stone,exact,4.271,1.206626,170.871
+30,carrysel,Carry-Select,exact,4.342,0.578688,81.948
+30,rbr,RBR,exact,2.194,0.91651,129.787
+30,loa,LOA,approximate,3.683,0.114414,16.47
+30,ccba,CCBA,approximate,3.8314,0.100734,17.128
+30,trua,TruA,approximate,3.3071,0.100363,14.04
+30,gear,GeAr,approximate,4.2734,0.144057,25.2
+30,csa,CSA,approximate,4.6418,0.131346,21.6
+31,full,Full (RCA),exact,7.607,0.218911,31.0
+31,sklansky,Sklansky,exact,4.6,0.479807,67.946
+31,kogge,Kogge-Stone,exact,4.271,1.290546,182.755
+31,carrysel,Carry-Select,exact,4.342,0.597978,84.68
+31,rbr,RBR,exact,2.194,0.94706,134.113
+31,loa,LOA,approximate,3.8188,0.118439,17.08
+31,ccba,CCBA,approximate,3.9556,0.104585,17.84
+31,trua,TruA,approximate,3.4291,0.103894,14.56
+31,gear,GeAr,approximate,4.4121,0.148859,26.04
+31,csa,CSA,approximate,4.7924,0.135725,22.32
+32,full,Full (RCA),exact,7.846,0.225972,32.0
+32,sklansky,Sklansky,exact,4.6,0.496361,70.29
+32,kogge,Kogge-Stone,exact,4.271,1.378659,195.232
+32,carrysel,Carry-Select,exact,4.342,0.617267,87.411
+32,rbr,RBR,exact,2.194,0.97761,138.44
+32,loa,LOA,approximate,3.9388,0.121831,17.507
+32,ccba,CCBA,approximate,4.0799,0.108467,18.56
+32,trua,TruA,approximate,3.5369,0.106869,14.924
+32,gear,GeAr,approximate,4.5507,0.153661,26.88
+32,csa,CSA,approximate,4.943,0.140103,23.04

@@ -1,0 +1,67 @@
+bit_precision,approach,adder_type,family,latency_ns,energy_nj,area_ge,energy_savings_vs_full_adder,area_savings_vs_full_adder
+1,adder_free,AFSRAM-CIM,digital_cim,2.4,9.3e-05,0.06,0.9869,0.9399
+2,adder_free,AFSRAM-CIM,digital_cim,2.9,0.000185,0.12,0.9869,0.9399
+4,adder_free,AFSRAM-CIM,digital_cim,3.4,0.000371,0.24,0.9869,0.9399
+8,adder_free,AFSRAM-CIM,digital_cim,3.9,0.000741,0.481,0.9869,0.9399
+16,adder_free,AFSRAM-CIM,digital_cim,4.4,0.001482,0.962,0.9869,0.9399
+32,adder_free,AFSRAM-CIM,digital_cim,4.9,0.002965,1.924,0.9869,0.9399
+1,traditional,Full (RCA),exact,0.676,0.007062,1.0,0.0,0.0
+1,traditional,Sklansky,exact,1.757,0.016876,2.39,-1.3898,-1.3898
+1,traditional,Kogge-Stone,exact,1.663,0.0,0.0,1.0,1.0
+1,traditional,Carry-Select,exact,0.676,0.01929,2.732,-1.7316,-1.7316
+1,traditional,RBR,exact,2.194,0.03055,4.326,-3.3262,-3.3262
+1,traditional,LOA,approximate,0.2691,0.002123,0.61,0.6993,0.39
+1,traditional,CCBA,approximate,0.3356,0.002897,0.44,0.5897,0.5605
+1,traditional,TruA,approximate,0.2417,0.001863,0.52,0.7362,0.48
+1,traditional,GeAr,approximate,0.3726,0.004322,0.714,0.388,0.286
+1,traditional,CSA,approximate,0.4134,0.004203,0.667,0.4048,0.3328
+2,traditional,Full (RCA),exact,0.676,0.014123,2.0,0.0,0.0
+2,traditional,Sklansky,exact,1.757,0.024453,3.463,-0.7314,-0.7314
+2,traditional,Kogge-Stone,exact,1.663,0.016854,2.387,-0.1933,-0.1933
+2,traditional,Carry-Select,exact,0.676,0.038579,5.463,-1.7316,-1.7316
+2,traditional,RBR,exact,2.194,0.061101,8.652,-3.3262,-3.3262
+2,traditional,LOA,approximate,0.2691,0.006148,1.037,0.5647,0.4815
+2,traditional,CCBA,approximate,0.3356,0.005826,0.888,0.5875,0.5559
+2,traditional,TruA,approximate,0.2417,0.005393,0.884,0.6181,0.558
+2,traditional,GeAr,approximate,0.3726,0.008643,1.428,0.388,0.286
+2,traditional,CSA,approximate,0.4134,0.008406,1.334,0.4048,0.3328
+4,traditional,Full (RCA),exact,1.154,0.028247,4.0,0.0,0.0
+4,traditional,Sklansky,exact,2.556,0.049016,6.941,-0.7353,-0.7353
+4,traditional,Kogge-Stone,exact,2.227,0.05864,8.304,-1.076,-1.076
+4,traditional,Carry-Select,exact,1.154,0.077158,10.926,-1.7316,-1.7316
+4,traditional,RBR,exact,2.194,0.122201,17.305,-3.3262,-3.3262
+4,traditional,LOA,approximate,0.4594,0.014199,1.891,0.4973,0.5272
+4,traditional,CCBA,approximate,0.5729,0.011779,1.812,0.583,0.5469
+4,traditional,TruA,approximate,0.4126,0.012455,1.612,0.5591,0.597
+4,traditional,GeAr,approximate,0.636,0.017287,2.856,0.388,0.286
+4,traditional,CSA,approximate,0.7057,0.016812,2.669,0.4048,0.3328
+8,traditional,Full (RCA),exact,2.11,0.056493,8.0,0.0,0.0
+8,traditional,Sklansky,exact,3.152,0.107547,15.23,-0.9037,-0.9037
+8,traditional,Kogge-Stone,exact,2.823,0.151618,21.471,-1.6838,-1.6838
+8,traditional,Carry-Select,exact,2.398,0.154317,21.853,-1.7316,-1.7316
+8,traditional,RBR,exact,2.194,0.244403,34.61,-3.3262,-3.3262
+8,traditional,LOA,approximate,0.9255,0.030299,4.331,0.4637,0.4586
+8,traditional,CCBA,approximate,1.0475,0.024066,3.77,0.574,0.5288
+8,traditional,TruA,approximate,0.831,0.026578,3.692,0.5295,0.5385
+8,traditional,GeAr,approximate,1.1629,0.034574,5.712,0.388,0.286
+8,traditional,CSA,approximate,1.2903,0.033625,5.338,0.4048,0.3328
+16,traditional,Full (RCA),exact,4.022,0.112986,16.0,0.0,0.0
+16,traditional,Sklansky,exact,3.812,0.234016,33.139,-1.0712,-1.0712
+16,traditional,Kogge-Stone,exact,3.483,0.397827,56.336,-2.521,-2.521
+16,traditional,Carry-Select,exact,3.046,0.308634,43.706,-1.7316,-1.7316
+16,traditional,RBR,exact,2.194,0.488805,69.22,-3.3262,-3.3262
+16,traditional,LOA,approximate,1.9042,0.061232,8.845,0.4581,0.4472
+16,traditional,CCBA,approximate,2.0489,0.050166,8.12,0.556,0.4925
+16,traditional,TruA,approximate,1.7099,0.053713,7.54,0.5246,0.5288
+16,traditional,GeAr,approximate,2.2805,0.069148,11.424,0.388,0.286
+16,traditional,CSA,approximate,2.5004,0.06865,11.098,0.3924,0.3064
+32,traditional,Full (RCA),exact,7.846,0.225972,32.0,0.0,0.0
+32,traditional,Sklansky,exact,4.6,0.496361,70.29,-1.1966,-1.1966
+32,traditional,Kogge-Stone,exact,4.271,1.378659,195.232,-5.101,-5.101
+32,traditional,Carry-Select,exact,4.342,0.617267,87.411,-1.7316,-1.7316
+32,traditional,RBR,exact,2.194,0.97761,138.44,-3.3262,-3.3262
+32,traditional,LOA,approximate,3.9388,0.121831,17.507,0.4609,0.4529
+32,traditional,CCBA,approximate,4.0799,0.108467,18.56,0.52,0.42
+32,traditional,TruA,approximate,3.5369,0.106869,14.924,0.5271,0.5336
+32,traditional,GeAr,approximate,4.5507,0.153661,26.88,0.32,0.16
+32,traditional,CSA,approximate,4.943,0.140103,23.04,0.38,0.28

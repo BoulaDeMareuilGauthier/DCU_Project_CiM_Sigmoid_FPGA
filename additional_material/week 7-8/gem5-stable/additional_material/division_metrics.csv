@@ -1,0 +1,342 @@
+bp,key,label,family,latency_ns,energy_nj,area_ge,ned,mred_pct,ed_max
+2,exact_array,Exact Array,exact,6.8402,0.254856,32.0,0.0,0.0,0
+2,exact_log,Exact Logarithmic,exact,5.7044,0.091651,17.6,0.0,0.0,0
+2,aaxd,AAXD,approximate,2.667678,0.077986,12.16,2.97,6.61,49
+2,inzed,INZeD,approximate,2.872884,0.086141,13.44,4.5,8.2,85
+2,axdr1,AXDr1,approximate,3.351698,0.101687,15.68,1.32,4.32,51
+2,axdr3,AXDr3,approximate,3.556904,0.10602,16.64,0.97,3.25,85
+2,seerad4,SEERAD-4,approximate,3.967316,0.122586,18.56,1.09,2.71,165
+2,daxd,DAXD,approximate,3.76211,0.11494,17.6,7.44,16.39,240
+2,sc,SC Divider,approximate,16.4,0.002496,9.6,15.0,25.0,500
+2,rapid,RAPID,approximate,2.8,0.0014,10.24,3.5,7.2,120
+2,fpca3d,3D-FPCA,approximate,3.82576,0.128602,27.2,2.5,5.8,60
+3,exact_array,Exact Array,exact,17.8779,0.616024,72.0,0.0,0.0,0
+3,exact_log,Exact Logarithmic,exact,5.7044,0.137476,39.6,0.0,0.0,0
+3,aaxd,AAXD,approximate,6.972381,0.188503,27.36,2.97,6.61,49
+3,inzed,INZeD,approximate,7.508718,0.208216,30.24,4.5,8.2,85
+3,axdr1,AXDr1,approximate,8.760171,0.245793,35.28,1.32,4.32,51
+3,axdr3,AXDr3,approximate,9.296508,0.256266,37.44,0.97,3.25,85
+3,seerad4,SEERAD-4,approximate,10.369182,0.296307,41.76,1.09,2.71,165
+3,daxd,DAXD,approximate,9.832845,0.277827,39.6,7.44,16.39,240
+3,sc,SC Divider,approximate,32.8,0.004992,21.6,15.0,25.0,500
+3,rapid,RAPID,approximate,3.501955,0.0024,23.04,3.5,7.2,120
+3,fpca3d,3D-FPCA,approximate,9.50235,0.307876,61.2,2.5,5.8,60
+4,exact_array,Exact Array,exact,25.4196,1.131656,128.0,0.0,0.0,0
+4,exact_log,Exact Logarithmic,exact,5.7044,0.183302,70.4,0.0,0.0,0
+4,aaxd,AAXD,approximate,9.913644,0.346287,48.64,2.97,6.61,49
+4,inzed,INZeD,approximate,10.676232,0.3825,53.76,4.5,8.2,85
+4,axdr1,AXDr1,approximate,12.455604,0.451531,62.72,1.32,4.32,51
+4,axdr3,AXDr3,approximate,13.218192,0.470769,66.56,0.97,3.25,85
+4,seerad4,SEERAD-4,approximate,14.743368,0.544327,74.24,1.09,2.71,165
+4,daxd,DAXD,approximate,13.98078,0.510377,70.4,7.44,16.39,240
+4,sc,SC Divider,approximate,65.6,0.009984,38.4,15.0,25.0,500
+4,rapid,RAPID,approximate,4.0,0.0036,40.96,3.5,7.2,120
+4,fpca3d,3D-FPCA,approximate,13.96008,0.563206,108.8,2.5,5.8,60
+5,exact_array,Exact Array,exact,33.7525,1.801502,200.0,0.0,0.0,0
+5,exact_log,Exact Logarithmic,exact,5.7044,0.229127,110.0,0.0,0.0,0
+5,aaxd,AAXD,approximate,13.163475,0.55126,76.0,2.97,6.61,49
+5,inzed,INZeD,approximate,14.17605,0.608908,84.0,4.5,8.2,85
+5,axdr1,AXDr1,approximate,16.538725,0.718799,98.0,1.32,4.32,51
+5,axdr3,AXDr3,approximate,17.5513,0.749425,104.0,0.97,3.25,85
+5,seerad4,SEERAD-4,approximate,19.57645,0.866522,116.0,1.09,2.71,165
+5,daxd,DAXD,approximate,18.563875,0.812477,110.0,7.44,16.39,240
+5,sc,SC Divider,approximate,131.2,0.019968,60.0,15.0,25.0,500
+5,rapid,RAPID,approximate,4.386314,0.005,64.0,3.5,7.2,120
+5,fpca3d,3D-FPCA,approximate,19.06295,0.894482,170.0,2.5,5.8,60
+6,exact_array,Exact Array,exact,42.8766,2.625412,288.0,0.0,0.0,0
+6,exact_log,Exact Logarithmic,exact,5.7044,0.274953,158.4,0.0,0.0,0
+6,aaxd,AAXD,approximate,16.721874,0.803376,109.44,2.97,6.61,49
+6,inzed,INZeD,approximate,18.008172,0.887389,120.96,4.5,8.2,85
+6,axdr1,AXDr1,approximate,21.009534,1.04754,141.12,1.32,4.32,51
+6,axdr3,AXDr3,approximate,22.295832,1.092172,149.76,0.97,3.25,85
+6,seerad4,SEERAD-4,approximate,24.868428,1.262823,167.04,1.09,2.71,165
+6,daxd,DAXD,approximate,23.58213,1.184061,158.4,7.44,16.39,240
+6,sc,SC Divider,approximate,262.4,0.039936,86.4,15.0,25.0,500
+6,rapid,RAPID,approximate,4.701955,0.0066,92.16,3.5,7.2,120
+6,fpca3d,3D-FPCA,approximate,24.81096,1.301641,244.8,2.5,5.8,60
+7,exact_array,Exact Array,exact,52.7919,3.60329,392.0,0.0,0.0,0
+7,exact_log,Exact Logarithmic,exact,5.7044,0.320778,215.6,0.0,0.0,0
+7,aaxd,AAXD,approximate,20.588841,1.102607,148.96,2.97,6.61,49
+7,inzed,INZeD,approximate,22.172598,1.217912,164.64,4.5,8.2,85
+7,axdr1,AXDr1,approximate,25.868031,1.437713,192.08,1.32,4.32,51
+7,axdr3,AXDr3,approximate,27.451788,1.498968,203.84,0.97,3.25,85
+7,seerad4,SEERAD-4,approximate,30.619302,1.733182,227.36,1.09,2.71,165
+7,daxd,DAXD,approximate,29.035545,1.625084,215.6,7.44,16.39,240
+7,sc,SC Divider,approximate,524.8,0.079872,117.6,15.0,25.0,500
+7,rapid,RAPID,approximate,4.968826,0.0084,125.44,3.5,7.2,120
+7,fpca3d,3D-FPCA,approximate,31.20411,1.78464,333.2,2.5,5.8,60
+8,exact_array,Exact Array,exact,63.4984,4.735064,512.0,0.0,0.0,0
+8,exact_log,Exact Logarithmic,exact,5.7044,0.366604,281.6,0.0,0.0,0
+8,aaxd,AAXD,approximate,24.764376,1.44893,194.56,2.97,6.61,49
+8,inzed,INZeD,approximate,26.669328,1.600452,215.04,4.5,8.2,85
+8,axdr1,AXDr1,approximate,31.114216,1.889291,250.88,1.32,4.32,51
+8,axdr3,AXDr3,approximate,33.019168,1.969787,266.24,0.97,3.25,85
+8,seerad4,SEERAD-4,approximate,36.829072,2.277566,296.96,1.09,2.71,165
+8,daxd,DAXD,approximate,34.92412,2.135514,281.6,7.44,16.39,240
+8,sc,SC Divider,approximate,1049.6,0.159744,153.6,15.0,25.0,500
+8,rapid,RAPID,approximate,5.2,0.0104,163.84,3.5,7.2,120
+8,fpca3d,3D-FPCA,approximate,38.2424,2.343448,435.2,2.5,5.8,60
+9,exact_array,Exact Array,exact,74.9961,6.020683,648.0,0.0,0.0,0
+9,exact_log,Exact Logarithmic,exact,5.7044,0.412429,356.4,0.0,0.0,0
+9,aaxd,AAXD,approximate,29.248479,1.842329,246.24,2.97,6.61,49
+9,inzed,INZeD,approximate,31.498362,2.034991,272.16,4.5,8.2,85
+9,axdr1,AXDr1,approximate,36.748089,2.402253,317.52,1.32,4.32,51
+9,axdr3,AXDr3,approximate,38.997972,2.504604,336.96,0.97,3.25,85
+9,seerad4,SEERAD-4,approximate,43.497738,2.895949,375.84,1.09,2.71,165
+9,daxd,DAXD,approximate,41.247855,2.715328,356.4,7.44,16.39,240
+9,sc,SC Divider,approximate,2099.2,0.319488,194.4,15.0,25.0,500
+9,rapid,RAPID,approximate,5.40391,0.0126,207.36,3.5,7.2,120
+9,fpca3d,3D-FPCA,approximate,45.92583,2.978044,550.8,2.5,5.8,60
+10,exact_array,Exact Array,exact,87.285,7.460107,800.0,0.0,0.0,0
+10,exact_log,Exact Logarithmic,exact,5.7044,0.458255,440.0,0.0,0.0,0
+10,aaxd,AAXD,approximate,34.04115,2.282793,304.0,2.97,6.61,49
+10,inzed,INZeD,approximate,36.6597,2.521516,336.0,4.5,8.2,85
+10,axdr1,AXDr1,approximate,42.76965,2.976583,392.0,1.32,4.32,51
+10,axdr3,AXDr3,approximate,45.3882,3.103405,416.0,0.97,3.25,85
+10,seerad4,SEERAD-4,approximate,50.6253,3.588312,464.0,1.09,2.71,165
+10,daxd,DAXD,approximate,48.00675,3.364508,440.0,7.44,16.39,240
+10,sc,SC Divider,approximate,4198.4,0.638976,240.0,15.0,25.0,500
+10,rapid,RAPID,approximate,5.586314,0.015,256.0,3.5,7.2,120
+10,fpca3d,3D-FPCA,approximate,54.2544,3.688408,680.0,2.5,5.8,60
+11,exact_array,Exact Array,exact,100.3651,9.053304,968.0,0.0,0.0,0
+11,exact_log,Exact Logarithmic,exact,5.7044,0.50408,532.4,0.0,0.0,0
+11,aaxd,AAXD,approximate,39.142389,2.770311,367.84,2.97,6.61,49
+11,inzed,INZeD,approximate,42.153342,3.060017,406.56,4.5,8.2,85
+11,axdr1,AXDr1,approximate,49.178899,3.612268,474.32,1.32,4.32,51
+11,axdr3,AXDr3,approximate,52.189852,3.766174,503.36,0.97,3.25,85
+11,seerad4,SEERAD-4,approximate,58.211758,4.354639,561.44,1.09,2.71,165
+11,daxd,DAXD,approximate,55.200805,4.08304,532.4,7.44,16.39,240
+11,sc,SC Divider,approximate,8396.8,1.277952,290.4,15.0,25.0,500
+11,rapid,RAPID,approximate,5.751318,0.0176,309.76,3.5,7.2,120
+11,fpca3d,3D-FPCA,approximate,63.22811,4.474527,822.8,2.5,5.8,60
+12,exact_array,Exact Array,exact,114.2364,10.800246,1152.0,0.0,0.0,0
+12,exact_log,Exact Logarithmic,exact,5.7044,0.549906,633.6,0.0,0.0,0
+12,aaxd,AAXD,approximate,44.552196,3.304875,437.76,2.97,6.61,49
+12,inzed,INZeD,approximate,47.979288,3.650483,483.84,4.5,8.2,85
+12,axdr1,AXDr1,approximate,55.975836,4.309298,564.48,1.32,4.32,51
+12,axdr3,AXDr3,approximate,59.402928,4.492902,599.04,0.97,3.25,85
+12,seerad4,SEERAD-4,approximate,66.257112,5.194918,668.16,1.09,2.71,165
+12,daxd,DAXD,approximate,62.83002,4.870911,633.6,7.44,16.39,240
+12,sc,SC Divider,approximate,16793.6,2.555904,345.6,15.0,25.0,500
+12,rapid,RAPID,approximate,5.901955,0.0204,368.64,3.5,7.2,120
+12,fpca3d,3D-FPCA,approximate,72.84696,5.33639,979.2,2.5,5.8,60
+13,exact_array,Exact Array,exact,128.8989,12.700912,1352.0,0.0,0.0,0
+13,exact_log,Exact Logarithmic,exact,5.7044,0.595731,743.6,0.0,0.0,0
+13,aaxd,AAXD,approximate,50.270571,3.886479,513.76,2.97,6.61,49
+13,inzed,INZeD,approximate,54.137538,4.292908,567.84,4.5,8.2,85
+13,axdr1,AXDr1,approximate,63.160461,5.067664,662.48,1.32,4.32,51
+13,axdr3,AXDr3,approximate,67.027428,5.28358,703.04,0.97,3.25,85
+13,seerad4,SEERAD-4,approximate,74.761362,6.109139,784.16,1.09,2.71,165
+13,daxd,DAXD,approximate,70.894395,5.728112,743.6,7.44,16.39,240
+13,sc,SC Divider,approximate,33587.2,5.111808,405.6,15.0,25.0,500
+13,rapid,RAPID,approximate,6.040528,0.0234,432.64,3.5,7.2,120
+13,fpca3d,3D-FPCA,approximate,83.11095,6.273988,1149.2,2.5,5.8,60
+14,exact_array,Exact Array,exact,144.3526,14.755284,1568.0,0.0,0.0,0
+14,exact_log,Exact Logarithmic,exact,5.7044,0.641557,862.4,0.0,0.0,0
+14,aaxd,AAXD,approximate,56.297514,4.515117,595.84,2.97,6.61,49
+14,inzed,INZeD,approximate,60.628092,4.987286,658.56,4.5,8.2,85
+14,axdr1,AXDr1,approximate,70.732774,5.887358,768.32,1.32,4.32,51
+14,axdr3,AXDr3,approximate,75.063352,6.138198,815.36,0.97,3.25,85
+14,seerad4,SEERAD-4,approximate,83.724508,7.097292,909.44,1.09,2.71,165
+14,daxd,DAXD,approximate,79.39393,6.654633,862.4,7.44,16.39,240
+14,sc,SC Divider,approximate,67174.4,10.223616,470.4,15.0,25.0,500
+14,rapid,RAPID,approximate,6.168826,0.0266,501.76,3.5,7.2,120
+14,fpca3d,3D-FPCA,approximate,94.02008,7.287311,1332.8,2.5,5.8,60
+15,exact_array,Exact Array,exact,157.8191,16.963345,1800.0,0.0,0.0,0
+15,exact_log,Exact Logarithmic,exact,5.7044,0.687382,990.0,0.0,0.0,0
+15,aaxd,AAXD,approximate,61.549449,5.190784,684.0,2.97,6.61,49
+15,inzed,INZeD,approximate,66.284022,5.733611,756.0,4.5,8.2,85
+15,axdr1,AXDr1,approximate,77.331359,6.768375,882.0,1.32,4.32,51
+15,axdr3,AXDr3,approximate,82.065932,7.056752,936.0,0.97,3.25,85
+15,seerad4,SEERAD-4,approximate,91.535078,8.159369,1044.0,1.09,2.71,165
+15,daxd,DAXD,approximate,86.800505,7.650469,990.0,7.44,16.39,240
+15,sc,SC Divider,approximate,134348.8,20.447232,540.0,15.0,25.0,500
+15,rapid,RAPID,approximate,6.288269,0.03,576.0,3.5,7.2,120
+15,fpca3d,3D-FPCA,approximate,104.36635,8.376354,1530.0,2.5,5.8,60
+16,exact_array,Exact Array,exact,171.488,19.325082,2048.0,0.0,0.0,0
+16,exact_log,Exact Logarithmic,exact,5.7044,0.733208,1126.4,0.0,0.0,0
+16,aaxd,AAXD,approximate,66.88032,5.913475,778.24,2.97,6.61,49
+16,inzed,INZeD,approximate,72.02496,6.531878,860.16,4.5,8.2,85
+16,axdr1,AXDr1,approximate,84.02912,7.710708,1003.52,1.32,4.32,51
+16,axdr3,AXDr3,approximate,89.17376,8.039234,1064.96,0.97,3.25,85
+16,seerad4,SEERAD-4,approximate,99.46304,9.295364,1187.84,1.09,2.71,165
+16,daxd,DAXD,approximate,94.3184,8.715612,1126.4,7.44,16.39,240
+16,sc,SC Divider,approximate,268697.6,40.894464,614.4,15.0,25.0,500
+16,rapid,RAPID,approximate,6.4,0.0336,655.36,3.5,7.2,120
+16,fpca3d,3D-FPCA,approximate,115.10176,9.54111,1740.8,2.5,5.8,60
+17,exact_array,Exact Array,exact,185.4329,21.840482,2312.0,0.0,0.0,0
+17,exact_log,Exact Logarithmic,exact,5.7044,0.779033,1271.6,0.0,0.0,0
+17,aaxd,AAXD,approximate,72.318831,6.683188,878.56,2.97,6.61,49
+17,inzed,INZeD,approximate,77.881818,7.382083,971.04,4.5,8.2,85
+17,axdr1,AXDr1,approximate,90.862121,8.714352,1132.88,1.32,4.32,51
+17,axdr3,AXDr3,approximate,96.425108,9.085641,1202.24,0.97,3.25,85
+17,seerad4,SEERAD-4,approximate,107.551082,10.505272,1340.96,1.09,2.71,165
+17,daxd,DAXD,approximate,101.988095,9.850057,1271.6,7.44,16.39,240
+17,sc,SC Divider,approximate,537395.2,81.788928,693.6,15.0,25.0,500
+17,rapid,RAPID,approximate,6.504955,0.0374,739.84,3.5,7.2,120
+17,fpca3d,3D-FPCA,approximate,126.25831,10.781573,1965.2,2.5,5.8,60
+18,exact_array,Exact Array,exact,199.6469,24.509535,2592.0,0.0,0.0,0
+18,exact_log,Exact Logarithmic,exact,5.7044,0.824859,1425.6,0.0,0.0,0
+18,aaxd,AAXD,approximate,77.862291,7.499918,984.96,2.97,6.61,49
+18,inzed,INZeD,approximate,83.851698,8.284223,1088.64,4.5,8.2,85
+18,axdr1,AXDr1,approximate,97.826981,9.779305,1270.08,1.32,4.32,51
+18,axdr3,AXDr3,approximate,103.816388,10.195967,1347.84,0.97,3.25,85
+18,seerad4,SEERAD-4,approximate,115.795202,11.789087,1503.36,1.09,2.71,165
+18,daxd,DAXD,approximate,109.805795,11.0538,1425.6,7.44,16.39,240
+18,sc,SC Divider,approximate,1074790.4,163.577856,777.6,15.0,25.0,500
+18,rapid,RAPID,approximate,6.60391,0.0414,829.44,3.5,7.2,120
+18,fpca3d,3D-FPCA,approximate,137.833,12.09774,2203.2,2.5,5.8,60
+19,exact_array,Exact Array,exact,214.1254,27.332232,2888.0,0.0,0.0,0
+19,exact_log,Exact Logarithmic,exact,5.7044,0.870684,1588.4,0.0,0.0,0
+19,aaxd,AAXD,approximate,83.508906,8.363663,1097.44,2.97,6.61,49
+19,inzed,INZeD,approximate,89.932668,9.238294,1212.96,4.5,8.2,85
+19,axdr1,AXDr1,approximate,104.921446,10.905561,1415.12,1.32,4.32,51
+19,axdr3,AXDr3,approximate,111.345208,11.370209,1501.76,0.97,3.25,85
+19,seerad4,SEERAD-4,approximate,124.192732,13.146804,1675.04,1.09,2.71,165
+19,daxd,DAXD,approximate,117.76897,12.326837,1588.4,7.44,16.39,240
+19,sc,SC Divider,approximate,2149580.8,327.155712,866.4,15.0,25.0,500
+19,rapid,RAPID,approximate,6.697513,0.0456,924.16,3.5,7.2,120
+19,fpca3d,3D-FPCA,approximate,149.82383,13.489606,2454.8,2.5,5.8,60
+20,exact_array,Exact Array,exact,228.8615,30.308564,3200.0,0.0,0.0,0
+20,exact_log,Exact Logarithmic,exact,5.7044,0.91651,1760.0,0.0,0.0,0
+20,aaxd,AAXD,approximate,89.255985,9.274421,1216.0,2.97,6.61,49
+20,inzed,INZeD,approximate,96.12183,10.244295,1344.0,4.5,8.2,85
+20,axdr1,AXDr1,approximate,112.142135,12.093117,1568.0,1.32,4.32,51
+20,axdr3,AXDr3,approximate,119.00798,12.608363,1664.0,0.97,3.25,85
+20,seerad4,SEERAD-4,approximate,132.73967,14.578419,1856.0,1.09,2.71,165
+20,daxd,DAXD,approximate,125.873825,13.669162,1760.0,7.44,16.39,240
+20,sc,SC Divider,approximate,4299161.6,654.311424,960.0,15.0,25.0,500
+20,rapid,RAPID,approximate,6.786314,0.05,1024.0,3.5,7.2,120
+20,fpca3d,3D-FPCA,approximate,162.2278,14.957168,2720.0,2.5,5.8,60
+21,exact_array,Exact Array,exact,243.8529,33.438523,3528.0,0.0,0.0,0
+21,exact_log,Exact Logarithmic,exact,5.7044,0.962335,1940.4,0.0,0.0,0
+21,aaxd,AAXD,approximate,95.102631,10.232188,1340.64,2.97,6.61,49
+21,inzed,INZeD,approximate,102.418218,11.302221,1481.76,4.5,8.2,85
+21,axdr1,AXDr1,approximate,119.487921,13.341971,1728.72,1.32,4.32,51
+21,axdr3,AXDr3,approximate,126.803508,13.910426,1834.56,0.97,3.25,85
+21,seerad4,SEERAD-4,approximate,141.434682,16.08393,2046.24,1.09,2.71,165
+21,daxd,DAXD,approximate,134.119095,15.080774,1940.4,7.44,16.39,240
+21,sc,SC Divider,approximate,8598323.2,1308.622848,1058.4,15.0,25.0,500
+21,rapid,RAPID,approximate,6.870781,0.0546,1128.96,3.5,7.2,120
+21,fpca3d,3D-FPCA,approximate,175.04391,16.500422,2998.8,2.5,5.8,60
+22,exact_array,Exact Array,exact,259.0927,36.722103,3872.0,0.0,0.0,0
+22,exact_log,Exact Logarithmic,exact,5.7044,1.008161,2129.6,0.0,0.0,0
+22,aaxd,AAXD,approximate,101.046153,11.236963,1471.36,2.97,6.61,49
+22,inzed,INZeD,approximate,108.818934,12.412071,1626.24,4.5,8.2,85
+22,axdr1,AXDr1,approximate,126.955423,14.652119,1897.28,1.32,4.32,51
+22,axdr3,AXDr3,approximate,134.728204,15.276395,2013.44,0.97,3.25,85
+22,seerad4,SEERAD-4,approximate,150.273766,17.663331,2245.76,1.09,2.71,165
+22,daxd,DAXD,approximate,142.500985,16.561668,2129.6,7.44,16.39,240
+22,sc,SC Divider,approximate,17196646.4,2617.245696,1161.6,15.0,25.0,500
+22,rapid,RAPID,approximate,6.951318,0.0594,1239.04,3.5,7.2,120
+22,fpca3d,3D-FPCA,approximate,188.26916,18.119365,3291.2,2.5,5.8,60
+23,exact_array,Exact Array,exact,274.5786,40.159297,4232.0,0.0,0.0,0
+23,exact_log,Exact Logarithmic,exact,5.7044,1.053986,2327.6,0.0,0.0,0
+23,aaxd,AAXD,approximate,107.085654,12.288745,1608.16,2.97,6.61,49
+23,inzed,INZeD,approximate,115.323012,13.573842,1777.44,4.5,8.2,85
+23,axdr1,AXDr1,approximate,134.543514,16.023559,2073.68,1.32,4.32,51
+23,axdr3,AXDr3,approximate,142.780872,16.706267,2200.64,0.97,3.25,85
+23,seerad4,SEERAD-4,approximate,159.255588,19.316622,2454.56,1.09,2.71,165
+23,daxd,DAXD,approximate,151.01823,18.111843,2327.6,7.44,16.39,240
+23,sc,SC Divider,approximate,34393292.8,5234.491392,1269.6,15.0,25.0,500
+23,rapid,RAPID,approximate,7.028274,0.0644,1354.24,3.5,7.2,120
+23,fpca3d,3D-FPCA,approximate,201.90255,19.813994,3597.2,2.5,5.8,60
+24,exact_array,Exact Array,exact,290.3083,43.750099,4608.0,0.0,0.0,0
+24,exact_log,Exact Logarithmic,exact,5.7044,1.099812,2534.4,0.0,0.0,0
+24,aaxd,AAXD,approximate,113.220237,13.38753,1751.04,2.97,6.61,49
+24,inzed,INZeD,approximate,121.929486,14.787533,1935.36,4.5,8.2,85
+24,axdr1,AXDr1,approximate,142.251067,17.456289,2257.92,1.32,4.32,51
+24,axdr3,AXDr3,approximate,150.960316,18.200041,2396.16,0.97,3.25,85
+24,seerad4,SEERAD-4,approximate,168.378814,21.043798,2672.64,1.09,2.71,165
+24,daxd,DAXD,approximate,159.669565,19.731295,2534.4,7.44,16.39,240
+24,sc,SC Divider,approximate,68786585.6,10468.982784,1382.4,15.0,25.0,500
+24,rapid,RAPID,approximate,7.101955,0.0696,1474.56,3.5,7.2,120
+24,fpca3d,3D-FPCA,approximate,215.94308,21.584307,3916.8,2.5,5.8,60
+25,exact_array,Exact Array,exact,306.2749,47.494505,5000.0,0.0,0.0,0
+25,exact_log,Exact Logarithmic,exact,5.7044,1.145637,2750.0,0.0,0.0,0
+25,aaxd,AAXD,approximate,119.447211,14.533318,1900.0,2.97,6.61,49
+25,inzed,INZeD,approximate,128.635458,16.053143,2100.0,4.5,8.2,85
+25,axdr1,AXDr1,approximate,150.074701,18.950307,2450.0,1.32,4.32,51
+25,axdr3,AXDr3,approximate,159.262948,19.757714,2600.0,0.97,3.25,85
+25,seerad4,SEERAD-4,approximate,177.639442,22.844857,2900.0,1.09,2.71,165
+25,daxd,DAXD,approximate,168.451195,21.420022,2750.0,7.44,16.39,240
+25,sc,SC Divider,approximate,137573171.2,20937.965568,1500.0,15.0,25.0,500
+25,rapid,RAPID,approximate,7.172627,0.075,1600.0,3.5,7.2,120
+25,fpca3d,3D-FPCA,approximate,230.38775,23.430302,4250.0,2.5,5.8,60
+26,exact_array,Exact Array,exact,322.4784,51.392509,5408.0,0.0,0.0,0
+26,exact_log,Exact Logarithmic,exact,5.7044,1.191463,2974.4,0.0,0.0,0
+26,aaxd,AAXD,approximate,125.766576,15.726108,2055.04,2.97,6.61,49
+26,inzed,INZeD,approximate,135.440928,17.370668,2271.36,4.5,8.2,85
+26,axdr1,AXDr1,approximate,158.014416,20.505611,2649.92,1.32,4.32,51
+26,axdr3,AXDr3,approximate,167.688768,21.379284,2812.16,0.97,3.25,85
+26,seerad4,SEERAD-4,approximate,187.037472,24.719797,3136.64,1.09,2.71,165
+26,daxd,DAXD,approximate,177.36312,23.178021,2974.4,7.44,16.39,240
+26,sc,SC Divider,approximate,275146342.4,41875.931136,1622.4,15.0,25.0,500
+26,rapid,RAPID,approximate,7.240528,0.0806,1730.56,3.5,7.2,120
+26,fpca3d,3D-FPCA,approximate,245.23656,25.351977,4596.8,2.5,5.8,60
+27,exact_array,Exact Array,exact,338.9165,55.444107,5832.0,0.0,0.0,0
+27,exact_log,Exact Logarithmic,exact,5.7044,1.237288,3207.6,0.0,0.0,0
+27,aaxd,AAXD,approximate,132.177435,16.965897,2216.16,2.97,6.61,49
+27,inzed,INZeD,approximate,142.34493,18.740108,2449.44,4.5,8.2,85
+27,axdr1,AXDr1,approximate,166.069085,22.122199,2857.68,1.32,4.32,51
+27,axdr3,AXDr3,approximate,176.23658,23.064749,3032.64,0.97,3.25,85
+27,seerad4,SEERAD-4,approximate,196.57157,26.668615,3382.56,1.09,2.71,165
+27,daxd,DAXD,approximate,186.404075,25.005292,3207.6,7.44,16.39,240
+27,sc,SC Divider,approximate,550292684.8,83751.862272,1749.6,15.0,25.0,500
+27,rapid,RAPID,approximate,7.305865,0.0864,1866.24,3.5,7.2,120
+27,fpca3d,3D-FPCA,approximate,260.48851,27.349329,4957.2,2.5,5.8,60
+28,exact_array,Exact Array,exact,355.5846,59.649295,6272.0,0.0,0.0,0
+28,exact_log,Exact Logarithmic,exact,5.7044,1.283114,3449.6,0.0,0.0,0
+28,aaxd,AAXD,approximate,138.677994,18.252684,2383.36,2.97,6.61,49
+28,inzed,INZeD,approximate,149.345532,20.161462,2634.24,4.5,8.2,85
+28,axdr1,AXDr1,approximate,174.236454,23.800069,3073.28,1.32,4.32,51
+28,axdr3,AXDr3,approximate,184.903992,24.814107,3261.44,0.97,3.25,85
+28,seerad4,SEERAD-4,approximate,206.239068,28.691311,3637.76,1.09,2.71,165
+28,daxd,DAXD,approximate,195.57153,26.901832,3449.6,7.44,16.39,240
+28,sc,SC Divider,approximate,1100585369.6,167503.724544,1881.6,15.0,25.0,500
+28,rapid,RAPID,approximate,7.368826,0.0924,2007.04,3.5,7.2,120
+28,fpca3d,3D-FPCA,approximate,276.1416,29.422358,5331.2,2.5,5.8,60
+29,exact_array,Exact Array,exact,372.4827,64.008069,6728.0,0.0,0.0,0
+29,exact_log,Exact Logarithmic,exact,5.7044,1.328939,3700.4,0.0,0.0,0
+29,aaxd,AAXD,approximate,145.268253,19.586469,2556.64,2.97,6.61,49
+29,inzed,INZeD,approximate,156.442734,21.634727,2825.76,4.5,8.2,85
+29,axdr1,AXDr1,approximate,182.516523,25.53922,3296.72,1.32,4.32,51
+29,axdr3,AXDr3,approximate,193.691004,26.627357,3498.56,0.97,3.25,85
+29,seerad4,SEERAD-4,approximate,216.039966,30.787881,3902.24,1.09,2.71,165
+29,daxd,DAXD,approximate,204.865485,28.867639,3700.4,7.44,16.39,240
+29,sc,SC Divider,approximate,2201170739.2,335007.449088,2018.4,15.0,25.0,500
+29,rapid,RAPID,approximate,7.429577,0.0986,2152.96,3.5,7.2,120
+29,fpca3d,3D-FPCA,approximate,292.19583,31.57106,5718.8,2.5,5.8,60
+30,exact_array,Exact Array,exact,389.6062,68.520426,7200.0,0.0,0.0,0
+30,exact_log,Exact Logarithmic,exact,5.7044,1.374765,3960.0,0.0,0.0,0
+30,aaxd,AAXD,approximate,151.946418,20.96725,2736.0,2.97,6.61,49
+30,inzed,INZeD,approximate,163.634604,23.159904,3024.0,4.5,8.2,85
+30,axdr1,AXDr1,approximate,190.907038,27.33965,3528.0,1.32,4.32,51
+30,axdr3,AXDr3,approximate,202.595224,28.504497,3744.0,0.97,3.25,85
+30,seerad4,SEERAD-4,approximate,225.971596,32.958325,4176.0,1.09,2.71,165
+30,daxd,DAXD,approximate,214.28341,30.902712,3960.0,7.44,16.39,240
+30,sc,SC Divider,approximate,4402341478.4,670014.898176,2160.0,15.0,25.0,500
+30,rapid,RAPID,approximate,7.488269,0.105,2304.0,3.5,7.2,120
+30,fpca3d,3D-FPCA,approximate,308.6492,33.795435,6120.0,2.5,5.8,60
+31,exact_array,Exact Array,exact,406.9551,73.186362,7688.0,0.0,0.0,0
+31,exact_log,Exact Logarithmic,exact,5.7044,1.42059,4228.4,0.0,0.0,0
+31,aaxd,AAXD,approximate,158.712489,22.395027,2921.44,2.97,6.61,49
+31,inzed,INZeD,approximate,170.921142,24.73699,3228.96,4.5,8.2,85
+31,axdr1,AXDr1,approximate,199.407999,29.201358,3767.12,1.32,4.32,51
+31,axdr3,AXDr3,approximate,211.616652,30.445526,3997.76,0.97,3.25,85
+31,seerad4,SEERAD-4,approximate,236.033958,35.20264,4459.04,1.09,2.71,165
+31,daxd,DAXD,approximate,223.825305,33.007049,4228.4,7.44,16.39,240
+31,sc,SC Divider,approximate,8804682956.8,1340029.796352,2306.4,15.0,25.0,500
+31,rapid,RAPID,approximate,7.545036,0.1116,2460.16,3.5,7.2,120
+31,fpca3d,3D-FPCA,approximate,325.50171,36.095481,6534.8,2.5,5.8,60
+32,exact_array,Exact Array,exact,424.5248,78.005874,8192.0,0.0,0.0,0
+32,exact_log,Exact Logarithmic,exact,5.7044,1.466416,4505.6,0.0,0.0,0
+32,aaxd,AAXD,approximate,165.564672,23.869797,3112.96,2.97,6.61,49
+32,inzed,INZeD,approximate,178.300416,26.365985,3440.64,4.5,8.2,85
+32,axdr1,AXDr1,approximate,208.017152,31.124344,4014.08,1.32,4.32,51
+32,axdr3,AXDr3,approximate,220.752896,32.450443,4259.84,0.97,3.25,85
+32,seerad4,SEERAD-4,approximate,246.224384,37.520825,4751.36,1.09,2.71,165
+32,daxd,DAXD,approximate,233.48864,35.180649,4505.6,7.44,16.39,240
+32,sc,SC Divider,approximate,17609365913.6,2680059.592704,2457.6,15.0,25.0,500
+32,rapid,RAPID,approximate,7.6,0.1184,2621.44,3.5,7.2,120
+32,fpca3d,3D-FPCA,approximate,342.75136,38.471198,6963.2,2.5,5.8,60
