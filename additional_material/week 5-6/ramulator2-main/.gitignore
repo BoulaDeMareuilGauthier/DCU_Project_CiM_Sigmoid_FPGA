@@ -1,0 +1,28 @@
+build/
+.vscode
+ext/
+ramulator2
+*.so
+autobuild.sh
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+ramulator2-venv/
+.venv/
+
+# Reference docs (large binaries)
+resources/jedec/
+
+# Generated artifacts
+*.png
+tests/plots/
+sweep_log.txt
+.ipynb_checkpoints/tests/plots/
+
+*.out
+*.json
