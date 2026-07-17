@@ -1,0 +1,57 @@
+[Ramulator::LoadStoreTrace] [info] Loading trace file proteus_f6/f6_ramulator.trace ...
+[Ramulator::LoadStoreTrace] [info] Loaded 30000 lines.
+Frontend:
+  impl: LoadStoreTrace
+
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 10000
+  total_num_read_requests: 20000
+  memory_system_cycles: 359876
+  DRAM:
+    impl: DDR4
+  AddrMapper:
+    impl: RoBaRaCoCh
+
+
+  Controller:
+    impl: Generic
+    id: Channel 0
+    avg_read_latency_0: 13.0070095
+    read_queue_len_avg_0: 34.1085663
+    write_queue_len_0: 5527180
+    queue_len_0: 17933416
+    num_other_reqs_0: 0
+    num_write_reqs_0: 10000
+    read_latency_0: 12352354
+    priority_queue_len_avg_0: 0.365075737
+    row_hits_0: 22377
+    priority_queue_len_0: 131382
+    row_misses_0: 7570
+    row_conflicts_0: 0
+    read_row_misses_0: 5055
+    queue_len_avg_0: 49.8322105
+    read_row_conflicts_core_0: 0
+    read_row_hits_0: 14912
+    write_queue_len_avg_0: 15.3585682
+    read_row_conflicts_0: 0
+    write_row_misses_0: 2515
+    write_row_conflicts_0: 0
+    read_queue_len_0: 12274854
+    write_row_hits_0: 7465
+    read_row_hits_core_0: 0
+    read_row_misses_core_0: 0
+    num_read_reqs_0: 949669
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+
+
+    RowPolicy:
+      impl: ClosedRowPolicy
+      num_close_reqs: 7404
+
+
+
