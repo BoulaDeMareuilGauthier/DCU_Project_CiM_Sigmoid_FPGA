@@ -1,15 +1,16 @@
 # DCU Project: FPGA-Accelerated Sigmoid Approximation for Compute-in-Memory
 
-This project implements and benchmarks hardware-accelerated sigmoid function approximations on the Xilinx Zynq-7010 (Digilent Zybo Z7-10) FPGA platform. The work explores two distinct approximation algorithms implemented in hardware (Verilog and VHDL) with comprehensive benchmarking infrastructure for evaluating latency, accuracy, and throughput.
+This project implements and benchmarks hardware-accelerated sigmoid function approximations and approximate arithmetic units on the Xilinx Zynq-7010 (Digilent Zybo Z7-10) FPGA platform. The work explores hardware approximation algorithms (Verilog and VHDL) with comprehensive benchmarking infrastructure for evaluating latency, accuracy, power, area, and throughput.
 
 ## Overview
 
-The sigmoid function is a fundamental activation function in neural networks and machine learning. This project implements two hardware-efficient approximations suitable for FPGA deployment:
+The sigmoid function is a fundamental activation function in neural networks and machine learning. This project implements hardware-efficient approximations suitable for FPGA deployment and CNN accelerators:
 
 1. **Azevodo Approximation** (16-bit fixed-point): A piecewise polynomial approximation using Q4.12 fixed-point arithmetic
 2. **Vaiṣṇav Approximation** (fast piecewise-linear): A fast, shift-based piecewise-linear approximation using Q4.12 fixed-point arithmetic
+3. **Truncated Adder (`ADD_APPROX`)**: Parameterized approximate adder for energy-efficient CNN/Sigmoid compute engines
 
-Both implementations are wrapped with AXI4-Lite interfaces and driven by the ARM Cortex-A9 processor on the Zynq SoC, enabling comprehensive performance evaluation.
+All implementations are wrapped with AXI4-Lite interfaces and driven by the ARM Cortex-A9 processor on the Zynq SoC, enabling comprehensive performance evaluation.
 
 ## Project Structure
 
@@ -29,6 +30,18 @@ DCU_Project_CiM_Sigmoid_FPGA/
 │   ├── sigmoid_bench.c          # Extended benchmark (100-point, DCC output)
 │   ├── stimuli_points.h         # Test point definitions
 │   └── build.tcl                # Vivado build script
+│
+├── truncated_adder/             # Parameterized Truncated Adder Module (Verilog)
+│   ├── AdderIMPACTZeroApproxOneBit.v # 1-bit zero truncation cell
+│   ├── full_adder_1bit.v        # 1-bit accurate full adder cell
+│   ├── ADD_APPROX.v             # Parameterized m-bit truncated adder
+│   ├── truncated_adder_top.v    # AXI4-Lite slave top wrapper
+│   ├── tb_ADD_APPROX.v          # Self-checking testbench (Pong P. Chu methodology)
+│   ├── simulate_python.py       # Standalone testbench runner (VCD waveforms)
+│   ├── verify_truncated_adder.py# Python MPE & PPA error analysis suite
+│   ├── build.tcl                # Vivado 333 MHz synthesis script
+│   ├── run_sim.tcl / .bat       # Vivado XSIM simulation scripts
+│   └── README.md                # Comprehensive documentation
 │
 ├── azevodo_benchmark/           # Comprehensive benchmark for Azevodo implementation
 │   ├── azevodo_bench_ddr.c      # 100-point DDR-based benchmark
@@ -51,7 +64,8 @@ DCU_Project_CiM_Sigmoid_FPGA/
 └── additional_material/         # Research materials and references
     ├── week 1-2/                # Initial exploration notebooks
     ├── week 3-4/                # AritPIM simulator (PIM arithmetic research)
-    └── week 5-6/                # Extended analysis notebooks
+    ├── week 5-6/                # Extended analysis notebooks
+    └── week 7-8/                # Extended PIM/gem5 simulator exploration
 ```
 
 ## Hardware Implementations
@@ -92,6 +106,17 @@ The sign is then applied: if x ≥ 0, y = result; else y = 1 - result.
 - Output range: 0.0 to 1.0
 - Uses only shift operations for efficiency
 
+### Truncated Adder (`ADD_APPROX`)
+
+**File**: `truncated_adder/ADD_APPROX.v`
+
+The Truncated Adder combines $n$ zero-truncation approximate adder cells (`AdderIMPACTZeroApproxOneBit`) at the lower LSBs with $(m-n)$ standard full adders (`full_adder_1bit`) at the upper MSBs:
+- Replaces standard 5-gate 1-bit full adders in the LSB section with zero-cost wire/constant logic.
+- Preserves signed 2's complement sign extension and carry chaining between stages.
+- Parameterized operand width $m$ (default 16) and approximation bits $n$ ($0 \le n \le m$).
+
+---
+
 ## Performance Results
 
 ### Vaiṣṇav Implementation (100 points, -8.0..+8.0 input range)
@@ -106,6 +131,21 @@ The sign is then applied: if x ≥ 0, y = result; else y = 1 - result.
 
 Throughput: ~2.52 Msps (Mega-samples per second)
 
+### Truncated Adder (`ADD_APPROX`) Trade-Off Results
+
+| Approx Bits ($n$) | Cell Count Saved (%) | Area Saved (%) | Power Saved (%) | Mean Percentage Error (%) |
+|---|---|---|---|---|
+| **2** | 5.26% | 5.46% | 6.32% | **0.83%** |
+| **4** | 10.91% | 12.13% | 14.95% | **1.74%** |
+| **6** | 16.87% | 18.90% | 23.67% | **2.90%** |
+| **8** | 22.12% | 24.58% | 32.22% | **6.89%** |
+| **10** | 27.96% | 30.99% | 40.83% | **22.76%** |
+| **12** | 35.27% | 36.97% | 49.37% | **82.14%** |
+| **14** | 53.40% | 50.58% | 58.41% | **365.00%** |
+| **16** | 73.83% | 75.24% | 72.05% | **100.00%** |
+
+---
+
 ## Requirements
 
 ### Hardware
@@ -113,15 +153,30 @@ Throughput: ~2.52 Msps (Mega-samples per second)
 - **FPGA**: Xilinx Zynq-7010 (ARM Cortex-A9 + Artix-7 FPGA fabric)
 
 ### Software Tools
-- **Vivado 2026.1**: For FPGA bitstream generation
+- **Vivado 2026.1**: For FPGA bitstream generation & XSIM simulation
 - **Vitis 2026.1**: ARM GCC toolchain for software compilation
-- **Python 3**: For benchmark automation (matplotlib optional for graphs)
+- **Python 3**: For benchmark automation and verification
 - **xsdb**: Xilinx System Debugger for JTAG communication
 
 ### Connection
 - JTAG (USB cable) — no UART required for benchmarking
 
+---
+
 ## Building and Running
+
+### Quick Start (Truncated Adder Simulation)
+
+```bash
+# Run standalone Python testbench runner & VCD waveform generator
+python truncated_adder/simulate_python.py
+
+# Run error metrics reproduction script
+python truncated_adder/verify_truncated_adder.py
+
+# Run Vivado XSIM simulation (if Vivado is installed)
+vivado -mode batch -source truncated_adder/run_sim.tcl
+```
 
 ### Quick Start (Vaiṣṇav Benchmark)
 
@@ -152,28 +207,32 @@ Throughput: ~2.52 Msps (Mega-samples per second)
 ### Detailed Instructions
 
 See individual README files in each subdirectory:
+- `truncated_adder/README.md` — Detailed Truncated Adder guide and architectural documentation
 - `vaisnav_benchmark/README.md` — Detailed Vaiṣṇav benchmark guide
 - `azevodo_benchmark/README.md` — Detailed Azevodo benchmark guide
+
+---
 
 ## Key Technical Details
 
 ### AXI4-Lite Interface
 
-Both implementations use a standard AXI4-Lite slave interface with the following register map:
+Both sigmoid implementations and the truncated adder top module use standard AXI4-Lite slave interfaces:
 
 | Offset | Register | Direction | Description |
 |---|---|---|---|
-| 0x00 | X_REG | R/W | Input value (Q4.12) |
-| 0x04 | Y_REG | R | Output value (Q4.12) |
+| 0x00 | X_REG / A_REG | R/W | Input value A (Q4.12) |
+| 0x04 | Y_REG / B_REG | R/W | Input value B (Q4.12) |
 | 0x08 | CTRL | W | Bit 0 = start computation |
 | 0x0C | STATUS | R | Bit 0 = busy, Bit 1 = done |
+| 0x10 | SUM_REG | R | Truncated Sum Output |
 
 ### Processing Pipeline
 
 The hardware uses a simple 4-stage FSM:
 1. **IDLE**: Wait for start command
-2. **LOAD**: Load input to sigmoid core
-3. **WAIT**: Wait for sigmoid computation (1 cycle)
+2. **LOAD**: Load input to sigmoid / adder core
+3. **WAIT**: Wait for computation (1 cycle)
 4. **STORE**: Store result and assert done
 
 ### PS7 Initialization and PL Enable
@@ -191,17 +250,27 @@ The benchmark uses bare-metal code that:
 
 The benchmark compiles with `-mfloat-abi=soft` (software floating-point) because enabling the VFP in startup code causes `ps7_init()` to hang in a DDR poll loop. This is a known issue with the specific startup code configuration.
 
+---
+
 ## Sources and Citations
 
 ### Primary Algorithm Sources
 
-1. **Vaiṣṇav Approximation**:
+1. **Truncated Adder Integration in CNN Accelerator**:
+   - Lim Qi Yang, Lim Yang Wei, Fakhrul Zaman Rokhani, Noor Ain Kamsani, *"Truncated Adder Integration in a Convolutional Neural Network Approximate Accelerator"*, IEEE ICSyS, 2025.
+   - Implemented in `truncated_adder/ADD_APPROX.v`
+
+2. **FPGA Prototyping by Verilog Examples**:
+   - Pong P. Chu, *"FPGA Prototyping by Verilog Examples: Xilinx Spartan-3 Version / Artix-7 Version"*, Wiley.
+   - Testbench architecture and simulation methodology implemented in `truncated_adder/tb_ADD_APPROX.v` and `run_sim.tcl`
+
+3. **Vaiṣṇav Approximation**:
    - Vaiṣṇav, "Fast Approximate Sigmoid Function for FPGA Implementation"
    - Implemented in `fast_Vaisnav16/sigmoid.vhdl`
    - This work provides a fast, shift-based piecewise-linear approximation suitable for FPGA implementation
    - **Source Repository**: https://github.com/AngeloIFSP/FPGA-implementation-of-sigmoid-approximation-for-neural-networks
 
-2. **Azevodo Approximation**:
+4. **Azevodo Approximation**:
    - Azevodo polynomial approximation method
    - Implemented in `16 bit Azevedo/sigmoid.v`
    - Piecewise polynomial approximation with optimized coefficients for Q4.12 fixed-point arithmetic
@@ -209,42 +278,44 @@ The benchmark compiles with `-mfloat-abi=soft` (software floating-point) because
 
 ### Hardware Platform Documentation
 
-3. **Xilinx Zynq-7000 Technical Reference Manual**:
+5. **Xilinx Zynq-7000 Technical Reference Manual**:
    - Xilinx UG585: Zynq-7000 SoC TRM
    - Referenced for PS7 initialization, SLCR configuration, and AXI4-Lite interface details
 
-4. **Digilent Zybo Z7-10 Reference Manual**:
+6. **Digilent Zybo Z7-10 Reference Manual**:
    - Board-specific documentation for the Zybo Z7-10 platform
    - Hardware specifications and pin mappings
 
 ### Related Research
 
-5. **AritPIM: High-Throughput In-Memory Arithmetic**:
+7. **AritPIM: High-Throughput In-Memory Arithmetic**:
    - O. Leitersdorf, D. Leitersdorf, J. Gal, M. Dahan, R. Ronen, and S. Kvatinsky, "AritPIM: High-Throughput In-Memory Arithmetic," IEEE Transactions on Emerging Topics in Computing, 2023.
    - Simulator included in `additional_material/week 3-4/AritPIM-master/`
    - This work explores in-memory arithmetic operations, providing context for compute-in-memory architectures
    - **Source Repository**: https://github.com/oleitersdorf/AritPIM
 
-6. **Proteus: High-Performance Processing-Using-DRAM**:
+8. **Proteus: High-Performance Processing-Using-DRAM**:
    - G. F. Oliveira, M. Kabra, Y. Guo, K. Chen, A. G. Yaglikci, M. Soysal, M. Sadrosadati, J. Olivares, S. Ghose, J. Gomez-Luna, and O. Mutlu, "Proteus: Achieving High-Performance Processing-Using-DRAM via Dynamic Precision Bit-Serial Arithmetic," Proceedings of the 37th ACM International Conference on Supercomputing (ICS), 2025.
    - Simulator included in `additional_material/week 3-4/Proteus-main/`
    - This work addresses PUD latency through dynamic bit-precision, adaptive data representation, and flexible arithmetic
    - **Source Repository**: https://github.com/CMU-SAFARI/Proteus
 
-7. **MIMDRAM: End-to-End Processing-Using-DRAM System**:
+9. **MIMDRAM: End-to-End Processing-Using-DRAM System**:
    - MIMDRAM simulator referenced by Proteus for cycle-level simulation
    - Provides gem5-based simulator infrastructure for PUD systems
    - **Source Repository**: https://github.com/CMU-SAFARI/MIMDRAM
 
 ### Development Tools
 
-8. **Xilinx Vivado Design Suite**:
-   - Version 2026.1 used for FPGA synthesis and bitstream generation
-   - AXI4-Lite IP integration and hardware platform export
+10. **Xilinx Vivado Design Suite**:
+    - Version 2026.1 used for FPGA synthesis and bitstream generation
+    - AXI4-Lite IP integration and hardware platform export
 
-9. **Xilinx Vitis Unified Software Platform**:
-   - Version 2026.1 ARM GCC toolchain for bare-metal software compilation
-   - PS7 initialization libraries and drivers
+11. **Xilinx Vitis Unified Software Platform**:
+    - Version 2026.1 ARM GCC toolchain for bare-metal software compilation
+    - PS7 initialization libraries and drivers
+
+---
 
 ## What Was Done
 
@@ -254,28 +325,34 @@ This project accomplished the following:
 
 1. **Algorithm Implementation**:
    - Translated two sigmoid approximation algorithms (Azevodo and Vaiṣṇav) from literature to hardware description languages (Verilog and VHDL)
-   - Optimized both implementations for 16-bit Q4.12 fixed-point arithmetic
+   - Implemented parameterized **Truncated Adder** (`ADD_APPROX`) with configurable zero-truncation bits ($n \in \{0..16\}$) based on IEEE ICSyS 2025.
+   - Optimized all implementations for 16-bit Q4.12 fixed-point arithmetic
    - Designed AXI4-Lite wrapper modules for processor integration
 
-2. **Software Development**:
+2. **Simulation & Verification Infrastructure**:
+   - Developed self-checking testbenches following Pong P. Chu's *FPGA Prototyping by Verilog Examples* methodology.
+   - Created standalone Python testbench runner generating GTKWave VCD waveforms (`simulate_python.py`).
+   - Built automated Python error evaluation tools reproducing PPA and MPE metrics from IEEE ICSyS 2025 (`verify_truncated_adder.py`).
+
+3. **Software Development**:
    - Implemented bare-metal drivers for the ARM Cortex-A9 processor
    - Created comprehensive benchmark frameworks with 100-point test suites
    - Developed automated testing infrastructure using xsdb Tcl scripts
    - Built Python automation scripts for result analysis and visualization
 
-3. **Performance Evaluation**:
+4. **Performance Evaluation**:
    - Measured latency (min/max/avg) across input range -8.0 to +8.0
    - Calculated accuracy metrics (absolute error, percentage error)
    - Computed throughput in samples per second
    - Generated latency vs. input graphs for analysis
 
-4. **Build Infrastructure**:
+5. **Build Infrastructure**:
    - Created Vivado build scripts for automated bitstream generation
    - Developed compile scripts for software (both OCM and DDR configurations)
    - Integrated PS7 initialization and PL enable sequences
    - Handled FPU/soft-float compilation issues
 
-5. **Documentation**:
+6. **Documentation**:
    - Created detailed README files for each implementation
    - Documented register maps, memory layouts, and result formats
    - Provided troubleshooting guides for common issues
@@ -316,11 +393,3 @@ The `additional_material/` directory contains research and exploration work rela
   - Contains Ramulator2 memory system simulator
   - Includes proteus_f6 directory with PIM-specific implementations
   - Provides infrastructure for memory system evaluation
-
-## License
-
-This project is part of academic coursework at Dublin City University (DCU). The implementations are based on published research and should be cited accordingly when used in derivative works.
-
-## Contact
-
-For questions or issues related to this project, please refer to the individual subdirectory README files or contact the project maintainers through the DCU academic channels.
