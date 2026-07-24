@@ -27,16 +27,6 @@ The `ADD_APPROX` module combines **$n$ 1-bit approximate adders** at the least s
             [ Sum[m-1:n] ]                          [ Sum[n-1:0] = 0 ]
 ```
 
-### Key Highlights:
-1. **`AdderIMPACTZeroApproxOneBit`**:
-   - Replaces the standard 5-gate 1-bit full adder logic with zero-cost wire/constant logic (`sum = 0`, `cout = 0`).
-   - Eliminates combinational gate area and switching activity in the lower $n$ bits.
-2. **Signed Arithmetic Support**:
-   - Fully supports 2's complement signed addition with precise carry-in routing into the MSB accurate stage (`Carry[n]`), preserving sign extension.
-3. **Full Parameterization**:
-   - `DATA_WIDTH` ($m$): Total operand bit width (default: 16).
-   - `APPROX_BITS` ($n$): Number of truncated LSB bits ($0 \le n \le m$).
-
 ---
 
 ## 2. Directory Structure
@@ -48,16 +38,38 @@ truncated_adder/
 ├── ADD_APPROX.v                    # Core parameterized m-bit truncated adder module
 ├── truncated_adder_top.v           # AXI4-Lite slave wrapper for Zynq-7010 FPGA integration
 ├── tb_ADD_APPROX.v                 # Verilog testbench
+├── create_project.tcl              # TCL script to generate Vivado .xpr project file
+├── build.tcl                       # Vivado TCL build script (.xpr + synthesis + PPA reports)
+├── open_vivado.bat                 # Windows batch launcher for Vivado GUI
 ├── verify_truncated_adder.py       # Python error analysis & benchmark reproduction script
-├── build.tcl                       # Vivado TCL build script (333 MHz target)
+├── simulate_python.py              # Testbench simulator generating VCD waveforms
 └── README.md                       # Documentation (this file)
 ```
 
 ---
 
-## 3. Register Map (AXI4-Lite)
+## 3. Creating & Opening Vivado Project (`.xpr`)
 
-The top-level module `truncated_adder_top.v` connects to the Zynq ARM Cortex-A9 PS via AXI4-Lite:
+### Option A: Create `.xpr` Project File via Command Line
+Run the following command in Vivado Command Prompt or terminal:
+```bash
+vivado -mode batch -source truncated_adder/create_project.tcl
+```
+This generates the Vivado project file at:  
+`truncated_adder/vivado_project/truncated_adder_project.xpr`
+
+### Option B: Build Project & Perform Full Synthesis
+```bash
+vivado -mode batch -source truncated_adder/build.tcl
+```
+This creates the `.xpr` project, runs synthesis, placement, routing, and exports PPA reports into `truncated_adder/build_output/`.
+
+### Option C: Double-Click Launcher (Windows)
+Double-click `truncated_adder/open_vivado.bat` to build the `.xpr` file and launch the Vivado GUI automatically.
+
+---
+
+## 4. Register Map (AXI4-Lite)
 
 | Address Offset | Register Name | Access | Description |
 |---|---|---|---|
@@ -69,9 +81,7 @@ The top-level module `truncated_adder_top.v` connects to the Zynq ARM Cortex-A9 
 
 ---
 
-## 4. Benchmark Performance & PPA Trade-Offs
-
-### A. Mean Percentage Error (MPE) Comparison (Paper Table IV vs Simulation)
+## 5. Benchmark Performance & PPA Trade-Offs
 
 | Approx Bits ($n$) | Cell Saved (%) | Area Saved (%) | Power Saved (%) | Paper Mean Error (%) | Python Sim Mean Error (%) |
 |---|---|---|---|---|---|
@@ -83,21 +93,3 @@ The top-level module `truncated_adder_top.v` connects to the Zynq ARM Cortex-A9 
 | **12** | 35.27% | 36.97% | 49.37% | **82.14%** | 225.19% |
 | **14** | 53.40% | 50.58% | 58.41% | **365.00%** | 1174.83% |
 | **16** | 73.83% | 75.24% | 72.05% | **100.00%** | 99.96% |
-
-> **Key Finding**: Setting $n = 4$ or $n = 6$ yields optimal trade-offs for CNN accelerators—reducing power consumption by up to **23.67%** and area by **18.90%** while maintaining output error below **3%**.
-
----
-
-## 5. How to Run
-
-### Python Verification
-To run the error analysis and reproduce the trade-off metrics:
-```bash
-python truncated_adder/verify_truncated_adder.py
-```
-
-### Vivado Synthesis
-To synthesize the hardware on Xilinx Vivado targeting Digilent Zybo Z7-10 (`xc7z010clg400-1`) at 333 MHz:
-```bash
-vivado -mode batch -source truncated_adder/build.tcl
-```
