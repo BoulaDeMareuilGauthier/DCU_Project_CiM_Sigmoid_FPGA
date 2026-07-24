@@ -1,0 +1,15 @@
+CC = gcc
+CFLAGS = -fopenmp -lm -O3 -w
+
+.PHONY: all clean
+
+all: f6_sigmoid_pim.exe f6_sigmoid_baseline.exe
+
+f6_sigmoid_pim.exe: f6_sigmoid.c util/bbop_manager.c
+	$(CC) $^ -DRUN_PIM -o $@ $(CFLAGS)
+
+f6_sigmoid_baseline.exe: f6_sigmoid.c util/bbop_manager.c
+	$(CC) $^ -DRUN_BASELINE -o $@ $(CFLAGS)
+
+clean:
+	rm -f f6_sigmoid_pim.exe f6_sigmoid_baseline.exe

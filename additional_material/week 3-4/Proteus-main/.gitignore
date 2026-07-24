@@ -1,0 +1,26 @@
+# Compiled executables
+*.exe
+*.out
+*.o
+*.a
+
+# CSV output from PIM simulations
+bbop_statistics.csv
+bbop_statistics_*.csv
+bbop_resolution.csv
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+build/
+*.dSYM/
