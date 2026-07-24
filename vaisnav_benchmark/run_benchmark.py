@@ -282,6 +282,7 @@ def main():
         ]))
 
     valid_lat = [r['latency_ns'] for r in rows if r['cycles'] > 0]
+    lat_below_1000 = [v for v in valid_lat if v < 1000]
     valid_err = [r['abs_error'] for r in rows]
     if valid_lat:
         lat_min_ns = min(valid_lat)
@@ -295,6 +296,8 @@ def main():
     else:
         err_avg = err_max = 0.0
 
+    lat_below_avg_ns = sum(lat_below_1000) / len(lat_below_1000) if lat_below_1000 else 0.0
+
     avg_lat_s = lat_avg_ns * 1e-9
     throughput = compute_throughput(avg_lat_s)
 
@@ -302,6 +305,7 @@ def main():
         ('lat_min_ns', lat_min_ns),
         ('lat_max_ns', lat_max_ns),
         ('lat_avg_ns', lat_avg_ns),
+        ('lat_avg_below_1000_ns', lat_below_avg_ns),
         ('err_avg', err_avg),
         ('err_max', err_max),
         ('throughput_msps', throughput / 1e6),
@@ -310,6 +314,7 @@ def main():
 
     print(f"\n--- Summary ---")
     print(f"  Latency:  min={lat_min_ns:.1f}  max={lat_max_ns:.1f}  avg={lat_avg_ns:.1f} ns")
+    print(f"  Latency avg (<1000 ns): {lat_below_avg_ns:.1f} ns")
     print(f"  Error:    avg={err_avg*1e6:.2f}  max={err_max*1e6:.2f} µ")
     print(f"  Throughput: {throughput/1e6:.3f} Msps ({throughput/1e3:.1f} Ksps)")
 
