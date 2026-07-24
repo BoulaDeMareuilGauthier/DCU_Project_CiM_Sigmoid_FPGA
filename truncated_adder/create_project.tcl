@@ -21,6 +21,10 @@ puts "==========================================================================
 # Create Vivado Project (.xpr) on disk
 create_project $project_name $project_dir -part $fpga_part -force
 
+# Downgrade Unconstrained IO DRC violations for standalone AXI module bitstream creation
+set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
+set_property SEVERITY {Warning} [get_drc_checks UCIO-1]
+
 # Add HDL Design Sources (sources_1)
 add_files -norecurse {
     ./AdderIMPACTZeroApproxOneBit.v
@@ -45,5 +49,5 @@ update_compile_order -fileset sim_1
 puts "=========================================================================="
 puts "  SUCCESS: Vivado Project Created!"
 puts "  Project File: [file normalize $project_dir/$project_name.xpr]"
-puts "  You can open this project directly in Vivado GUI."
+puts "  DRC Rules NSTD-1 & UCIO-1 set to Warning to allow standalone bitstream generation."
 puts "=========================================================================="

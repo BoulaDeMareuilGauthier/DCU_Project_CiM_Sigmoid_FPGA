@@ -39,7 +39,8 @@ truncated_adder/
 ├── truncated_adder_top.v           # AXI4-Lite slave wrapper for Zynq-7010 FPGA integration
 ├── tb_ADD_APPROX.v                 # Verilog testbench
 ├── create_project.tcl              # TCL script to generate Vivado .xpr project file
-├── build.tcl                       # Vivado TCL build script (.xpr + synthesis + PPA reports)
+├── build.tcl                       # Standalone Vivado build script (with DRC NSTD-1/UCIO-1 overrides)
+├── build_system_bd.tcl            # Full Zynq PS7 Block Design build script (system_wrapper.bit)
 ├── open_vivado.bat                 # Windows batch launcher for Vivado GUI
 ├── verify_truncated_adder.py       # Python error analysis & benchmark reproduction script
 ├── simulate_python.py              # Testbench simulator generating VCD waveforms
@@ -48,24 +49,26 @@ truncated_adder/
 
 ---
 
-## 3. Creating & Opening Vivado Project (`.xpr`)
+## 3. Resolving DRC Violations (`[DRC NSTD-1]` & `[DRC UCIO-1]`)
 
-### Option A: Create `.xpr` Project File via Command Line
-Run the following command in Vivado Command Prompt or terminal:
-```bash
-vivado -mode batch -source truncated_adder/create_project.tcl
-```
-This generates the Vivado project file at:  
-`truncated_adder/vivado_project/truncated_adder_project.xpr`
+### Why standard bitstream generation failed:
+When generating a bitstream directly for an AXI sub-module (`truncated_adder_top.v`), Vivado treats the 70 top-level AXI ports (`s_axi_aclk`, `s_axi_araddr`, etc.) as external physical FPGA package pins, throwing DRC errors `NSTD-1` (unspecified IO standard) and `UCIO-1` (unconstrained pin location).
 
-### Option B: Build Project & Perform Full Synthesis
+### Solution Options:
+
+#### Option 1: Standalone Module Bitstream (DRC Override)
+Run the updated `build.tcl` which downgrades DRC `NSTD-1` and `UCIO-1` severities to warnings:
 ```bash
 vivado -mode batch -source truncated_adder/build.tcl
 ```
-This creates the `.xpr` project, runs synthesis, placement, routing, and exports PPA reports into `truncated_adder/build_output/`.
+*Output*: Generates `truncated_adder/build_output/truncated_adder_top.bit`.
 
-### Option C: Double-Click Launcher (Windows)
-Double-click `truncated_adder/open_vivado.bat` to build the `.xpr` file and launch the Vivado GUI automatically.
+#### Option 2: Full Zynq System Block Design (Recommended for Hardware)
+Run `build_system_bd.tcl` which connects `truncated_adder_top` to the Zynq ARM Cortex-A9 CPU (`processing_system7`) via an AXI Interconnect block design:
+```bash
+vivado -mode batch -source truncated_adder/build_system_bd.tcl
+```
+*Output*: Generates `truncated_adder/build_output/system_wrapper.bit` with 100% clean DRC compliance (all AXI ports are connected internally to the ARM CPU bus).
 
 ---
 
